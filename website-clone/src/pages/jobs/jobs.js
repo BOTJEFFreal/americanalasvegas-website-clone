@@ -1,5 +1,5 @@
 import InputTag from "../../components/inputTag/inputTag";
-import HeaderSmall from "../../components/header-small/header-small";
+import HeaderSmall from "../../components/headerSmall/headerSmall";
 import "./jobs.css";
 function JobsPage() {
   return (

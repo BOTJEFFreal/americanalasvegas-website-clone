@@ -1,4 +1,4 @@
-import HeaderSmall from "../../components/header-small/header-small";
+import HeaderSmall from "../../components/headerSmall/headerSmall";
 import InputTag from "../../components/inputTag/inputTag";
 import DropdownComponent from "../../components/dropdown/dropdown"
 import DatePickerComponent from "../../components/calender/calender"

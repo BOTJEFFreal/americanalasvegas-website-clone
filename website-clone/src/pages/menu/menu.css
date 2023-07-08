@@ -1,0 +1,16 @@
+.main-content{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 5%;
+}
+.container {
+    display: flex;
+    border-left: 1px solid #E4E4E4;
+    padding-left: 4px;
+    width: 27%;
+
+    /* background-color: aqua; */
+}
+
+
