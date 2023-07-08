@@ -1,0 +1,210 @@
+.header-navigation{
+    display: flex;
+    justify-content: center;
+align-items: center;
+flex-shrink: 0;
+    
+}
+
+.header-nav-container{
+    display: flex;
+    align-items: flex-start;
+    gap: 800.77px;
+    flex-shrink: 0;
+}
+.header-navigation img{
+    display: flex;
+width: 150px;
+height: 51.3px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+}
+.go-back span{
+    color: #4F5454;
+font-size: 23.04px;
+font-style: normal;
+font-weight: 400;
+line-height: 23.04px;
+}
+.go-back a{
+    color: #4F5454;
+font-family: Roboto;
+font-size: 19.2px;
+font-style: normal;
+font-weight: 700;
+line-height: 28.8px;
+}
+
+
+.Main-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f8fa;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.main-heading {
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.form {
+  height: 70%;
+  margin-left: 30%;
+  margin-right: 30%;
+  justify-content: center;
+  align-self: center;
+}
+
+.main-heading h1 {
+  color: #212529;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.main-heading p {
+  color: #4f5454;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 17.6px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+}
+
+.main-heading a {
+  color: #212529;
+  text-decoration: none;
+}
+
+.checkbox-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.checkbox-polices {
+  border-radius: 2.5px;
+  border: 1px solid #767676;
+  background: #fff;
+  height: 100%;
+}
+
+.checkbox-polices::after {
+  content: "";
+  border-radius: 2.5px;
+  background: #0075ff;
+}
+
+.checkbox-row label {
+  color: #212529;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.checkbox-row a {
+  text-decoration: none;
+  color: #212529;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.multiple-checklist {
+  margin-top: 19px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.multiple-checklist p {
+  color: #6d6e71;
+}
+
+.multiple-checklist div{
+    align-items: start;
+}
+.multiple-checklist label {
+  color: #212529;
+  margin-left: 20px;
+}
+
+.multiple-checklist select {
+  margin-top: 15px;
+}
+
+.multiple-checklist input{
+    height: 30px;
+}
+
+textarea {
+  resize: vertical;
+  border-radius: 10px;
+  border: 2px solid #f3f3f4;
+  background: #fff;
+  min-height: 100px;
+  width: 100%;
+}
+.bottom {
+  margin-top: 10px;
+}
+.bottom-continer {
+  width: 100%;
+  height: 4%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bottom-continer p {
+  height: 2%;
+  color: #4f5454;
+  font-family: Roboto;
+  font-size: 17.6px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26.4px;
+}
+
+.bottom-continer button {
+  min-width: 200px;
+  border-radius: 10px;
+  background: #00a89e;
+
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.submit {
+    width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  background: #353848;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}

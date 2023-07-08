@@ -1,0 +1,31 @@
+.text-input {
+  display: block;
+  color: aliceblue;
+  display: inline-flex;
+padding: 19px 16px 20px 16px;
+align-items: flex-start;
+width: 80%;
+margin-bottom: 10px;
+border-radius: 10px;
+border: 2px solid #F3F3F4;
+background: #FFF;
+}
+
+input:focus {
+  border: 2px solid red;
+  border-radius: 4px;
+  box-shadow: 0 0 2px red;
+  outline-offset: 0px;
+  outline: none;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #000;
+  font-family: Roboto;
+  font-size: 14.4px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  opacity: 1;
+}
