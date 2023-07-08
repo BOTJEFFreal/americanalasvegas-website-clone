@@ -1,0 +1,31 @@
+header {
+    background-color: #f2f2f2;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .back-button {
+    color: #4f5454;
+    font-family: Roboto;
+    font-size: 19.2px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-decoration: none;
+  }
+  
+  .back-button:hover {
+    text-decoration: underline;
+  }
+  
+  .centered-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .centered-image img {
+    width: 80%;
+    max-height: 100px;
+  }

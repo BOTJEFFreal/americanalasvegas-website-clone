@@ -1,22 +1,10 @@
 import InputTag from "../../components/inputTag/inputTag";
+import HeaderSmall from "../../components/header-small/header-small";
 import "./jobs.css";
 function JobsPage() {
   return (
     <>
-      <div className="header-navigation">
-        <div className="header-nav-container" >
-        <div class="go-back">
-          <a
-            href="http://americanalasvegas.com/las-vegas-americana-restaurant-events"
-            class="go-back-link"
-          >
-            <span class="material-icons">keyboard_arrow_left</span> Back
-          </a>
-        </div>
-        <img src="./logo.png" alt="Image description" />
-      </div>
-        </div>
-        
+      <HeaderSmall></HeaderSmall>
       <div className="Main-container">
         <div className="main-heading">
           <h1>Careers</h1>
