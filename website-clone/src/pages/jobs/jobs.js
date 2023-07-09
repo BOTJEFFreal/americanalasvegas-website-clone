@@ -5,17 +5,20 @@ function JobsPage() {
   return (
     <>
       <HeaderSmall></HeaderSmall>
+
       <div className="Main-container">
-        <div className="main-heading">
+        <div class="main-heading">
           <h1>Careers</h1>
-          <p>
-            We are hiring! Apply below to become a part of our awesome team and
-            we'll get back to you ASAP!
-          </p>
-          <p>
-            Alternatively if you have questions you can call us at{" "}
-            <a href="tel:(702) 331-5565">(702) 331-5565</a>
-          </p>
+          <div class="sub-heading">
+            <h2>
+              We are hiring! Apply below to become a part of our awesome team
+              and we'll get back to you ASAP!
+            </h2>
+            <h2>
+              Alternatively if you have questions you can call us at
+              <a href="tel:(702) 331-5565">(702) 331-5565</a>
+            </h2>
+          </div>
         </div>
         <div className="form">
           <InputTag></InputTag>
@@ -41,11 +44,11 @@ function JobsPage() {
               <label for="Bartender">Bartender</label>
             </div>
             <div>
-              <input
-                id="Busser/Bus Person"
-                type="checkbox"
-                value="Busser/Bus Person"
-              ></input>
+                <input
+                  id="Busser/Bus Person"
+                  type="checkbox"
+                  value="Busser/Bus Person"
+                ></input>
               <label for="Busser/Bus Person">Busser/Bus Person</label>
             </div>
             <div>
@@ -81,12 +84,16 @@ function JobsPage() {
               <label for="Sous Chef">Sous Chef</label>
             </div>
           </div>
-          <textarea placeholder="Cover Letter (optional)..."></textarea>
+          <textarea
+            className="textarea"
+            placeholder="Cover Letter (optional)..."
+          ></textarea>
           <div className="bottom">
             <div className="bottom-continer">
               <p>Resume:</p>
               <button>Choose a File</button>
             </div>
+            <div className="button-message"></div>
             <div className="bottom-continer">
               <p>Resume:</p>
               <button>Choose a File</button>

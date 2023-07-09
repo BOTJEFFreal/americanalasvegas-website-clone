@@ -1,31 +1,134 @@
-header {
-    background-color: #f2f2f2;
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  .back-button {
-    color: #4f5454;
-    font-family: Roboto;
-    font-size: 19.2px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28.8px;
-    text-decoration: none;
-  }
-  
-  .back-button:hover {
+@import url('https://fonts.googleapis.com/css?family=Material+Icons:400&display=swap'); 
+* { 
+    box-sizing: border-box;
+} 
+
+.header-navigation { 
+    background-color: #fff; 
+    min-height: 50px;
+} 
+
+#__nuxt { 
+    background-color: #f7f8fa;
+} 
+
+body { 
+    background-color:  #fff; 
+    color:  #212529; 
+    font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; 
+    font-size:  1rem; 
+    font-weight:  400; 
+    line-height:  1.5; 
+    margin:  0 0 130px;
+    text-align:  left;
+} 
+
+html { 
+    -webkit-text-size-adjust:  100%; 
+    -webkit-tap-highlight-color:  rgba(0,0,0,0); 
+    font-family:  sans-serif; 
+    line-height:  1.15;
+    background: #f7f8fa; 
+    min-height: 100%; 
+    position: relative;
+} 
+
+.col-md-12 { 
+    padding-left: 15px; 
+    padding-right: 15px; 
+    position: relative; 
+    width: 100%;
+} 
+
+@media (min-width: 768px){ 
+  .col-md-12 { 
+    flex: 0 0 100%; 
+    max-width: 100%;
+  } 
+}     
+
+.text-center { 
+    text-align: center!important;
+} 
+
+*,:after,:before { 
+    box-sizing: border-box;
+} 
+
+.go-back { 
+    display: table; 
+    height: 100%; 
+    left: 10px; 
+    position: absolute;
+} 
+
+.logo-holder { 
+    margin: 0 auto; 
+    max-width: 150px;
+} 
+
+a { 
+    background-color:  transparent; 
+    color:  #000;
+    -webkit-text-decoration:  none; 
+    text-decoration:  none;
+} 
+
+.go-back-link { 
+    color: #4f5454; 
+    display: table-cell; 
+    font-size: 1.2em; 
+    font-weight: 700; 
+    padding: 10px 0; 
+    text-align: left; 
+    vertical-align: middle;
+} 
+
+a:hover { 
+    color: #0056b3; 
+    -webkit-text-decoration: underline; 
     text-decoration: underline;
-  }
-  
-  .centered-image {
-    flex: 1;
-    text-align: center;
-  }
-  
-  .centered-image img {
-    width: 80%;
-    max-height: 100px;
-  }
+} 
+
+.go-back-link:hover { 
+    color: #333534;
+} 
+
+img { 
+    border-style:  none;
+    vertical-align: middle;
+} 
+
+.logo { 
+    max-height: 120px; 
+    max-width: 150px;
+} 
+
+.material-icons { 
+    font-family: 'Material Icons'; 
+    font-weight: normal; 
+    font-style: normal; 
+    font-size: 24px; 
+    line-height: 1; 
+    letter-spacing: normal; 
+    text-transform: none; 
+    display: inline-block; 
+    white-space: nowrap; 
+    word-wrap: normal; 
+    direction: ltr; 
+    -webkit-font-feature-settings: 'liga'; 
+    -webkit-font-smoothing: antialiased;
+} 
+
+.go-back-link span  { 
+    font-size: 1.2em; 
+    font-weight: 700; 
+    vertical-align: sub;
+} 
+
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#style-Q7agP.style-Q7agP {  
+   background-color:#fff;  
+   color:#000;  
+}  
