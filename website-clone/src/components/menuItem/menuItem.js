@@ -4,16 +4,13 @@ function menuItem() {
   return (
     <>
       <div class="food-item-holder">
-        <div className="food">
-        <div class="food-item-title">
-          <h3>Grilled Petite Ribeye Steak*</h3>
-        </div>
-        <div class="food-price">$37.00</div>
-        </div>
+        <h3 class="food-item-title">Grilled Petite Ribeye Steak*</h3>
+        <h3 class="food-price">$37.00</h3>
         <div class="food-item-description">
-          Hen Of the Woods Mushroom | Red Wine Natural | Potato Puree
-        </div>
+        Hen Of the Woods Mushroom | Red Wine Natural | Potato Puree
       </div>
+      </div>
+     
     </>
   );
 }

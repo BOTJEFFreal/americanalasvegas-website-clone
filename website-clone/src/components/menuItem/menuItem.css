@@ -1,21 +1,28 @@
 .food-item-holder {
-  border-bottom: 1px solid #e4e4e4;
+  padding: 15px 30px 15px 10px;
+  border-bottom: 1px solid #E4E4E4;
+  border-left: 1px solid #A31521;
 }
+
+
 .food-item-title {
+  display: inline;
   color: #000;
   font-family: Montserrat;
   font-size: 18.2px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20.02px;
+  /* line-height: 20.02px; */
 }
 .food-price {
-  color: #a31521;
-  font-family: Montserrat;
-  font-size: 18.2px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
+  float: right;
+  display: inline;  
+  color: #A31521;
+font-family: Montserrat;
+font-size: 18.2px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px;
 }
 
 .food-item-description {
@@ -24,15 +31,11 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px;
+  /* line-height: 20px; */
   margin: 0;
   padding: 0;
   height: max-content;
+  margin-top: 6px;
 }
 
-.food {
-  display: inline-flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-}
+
