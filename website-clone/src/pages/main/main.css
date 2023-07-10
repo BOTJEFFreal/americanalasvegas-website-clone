@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+video {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+video#coverVideo {
+  z-index: 99;
+  background: url(https://static.spotapps.co/web/americanalasvegas--com/custom/video_poster.jpg)
+    no-repeat;
+  background-size: cover;
+  background-image: url("https://static.spotapps.co/web/americanalasvegas--com/custom/video_poster.jpg");
+}
+
+@media (min-width: 1025px) {
+  video#coverVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: none;
+    vertical-align: baseline;
+  }
+}
+
+.main-content{
+    display: block;
+}
+
+.red-banner {
+  padding: 30px 0px;
+  justify-content: center;
+  align-items: center;
+  background-color: #a31521;
+  color: #fff;
+  text-align: center;
+}
+.red-banner i {
+  padding: 10px 10px 0px 10px;
+}
+.h1 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.about-us {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(153, 208, 231, 0.379);
+}
+
+.about-us-left {
+  width: 50%;
+}
+.about-us-right {
+  width: 50%;
+  padding: 70px 4%;
+}
+
+.about-us-heading {
+  display: block;
+}
+.about-us-heading p {
+  color: #000;
+  text-align: center;
+  font-family: DM Serif Display;
+  font-size: 60.2px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 73.92px;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.banner {
+  display: inline;
+  align-items: center;
+}
+.about-us-content {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18.2px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  margin: 15px 0px;
+}
+
+.about-us-button {
+  display: flex;
+  padding: 20px 0px;
+  margin: 15px 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-button button {
+  border: 1px solid #002e48;
+  background: #002e48;
+  padding: 9px 40px;
+
+  color: #fff;
+  text-align: center;
+  font-family: DM Serif Display;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.857px;
+  text-transform: uppercase;
+}
+
+.cards {
+  padding: 60px 5%;
+}
+
+.catering {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
+  padding: 30px 0px;
+}
+
+.catering-us-left {
+  padding: 60px 9% 60px 3.2%;
+}
+
+.catering-us-left {
+  width: 50%;
+}
+.catering-us-right {
+  width: 50%;
+  padding: 70px 4%;
+}
+.catering-us-heading {
+  display: block;
+}
+.catering-us-heading p {
+  color: #000;
+  text-align: center;
+  font-family: DM Serif Display;
+  font-size: 60.2px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 73.92px;
+  text-transform: uppercase;
+  margin: 0px;
+}
+.catering-us-subheading {
+  color: #002e48;
+  text-align: center;
+  font-family: Parisienne;
+  font-size: 31.2px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35.42px;
+  margin: 15px 0px;
+}
+
+.catering-us-content {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18.2px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  margin: 15px 0px;
+}
+
+.catering-us-button {
+  display: flex;
+  padding: 20px 0px;
+  margin: 15px 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.catering-us-button button {
+  border: 1px solid #002e48;
+  background: #002e48;
+  padding: 9px 40px;
+
+  color: #fff;
+  text-align: center;
+  font-family: DM Serif Display;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.857px;
+  text-transform: uppercase;
+}
+
+.reservation-section {
+  display: block;
+  width: 100%;
+  /* padding: 98px 365px 182px 365px; */
+  justify-content: center;
+  align-items: center;
+  background: #002e48;
+  padding: 80px 0px 20px;
+}
+
+.reservation-heading {
+  padding: 45px 0px 5px;
+}
+
+.reservation-section h1 {
+  padding-bottom: 10px;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-family: DM Serif Display;
+  font-size: 67.2px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 73.92px;
+  text-transform: uppercase;
+}
+
+.reservation-section p {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18.2px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.reservation-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(153, 208, 231, 0.379);
+  justify-content: center;
+  align-items: center;
+
+}
+
+.map-left {
+    /* display: flex; */
+  width: 50%;
+  height: 520px;
+  position: relative;
+  justify-content: center;
+
+}
+.map-content{
+    width: 90%;
+    padding: 55px 60px 30px 30px;
+    position: absolute;
+
+    right: 0;
+    
+}
+.map-heading {
+  color: #000;
+  font-family: DM Serif Display;
+  font-size: 67.2px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 73.92px;
+  text-transform: uppercase;
+  margin: 45px 0px 10px;
+}
+
+.map-subheading{
+    color: #002E48;
+font-family: Parisienne;
+font-size: 31.2px;
+font-style: normal;
+font-weight: 400;
+line-height: 35.42px;
+margin-bottom: 30px;
+}
+
+.map-form-heading{
+    color: #000;
+font-family: Montserrat;
+font-size: 18.2px;
+font-style: normal;
+font-weight: 500;
+line-height: 20.02px;
+margin: 20px 0px 30px;
+}
+
+.map-form-content{
+    display: flex;
+}
+
+.map-form-content input{
+    padding: 15px 5px;
+    width: 392.2px;
+    margin: 10px 0px 15px;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    background-color: rgba(153, 208, 231, 0.379);
+
+}
+.map-form-content input::placeholder{
+    color: #000;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.map-form-content button{
+    margin: 20px 0px 20px 15px;
+    border: 1px solid #A31521;
+background: #A31521;
+
+color: #FFF;
+text-align: center;
+font-family: DM Serif Display;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22.857px;
+text-transform: uppercase;
+
+padding: 10px 40px  ;
+}
+.map-right {
+  width: 50%;
+}
