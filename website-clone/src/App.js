@@ -7,10 +7,11 @@ import MainPage from './pages/main/main'
 import Carousel from './components/carousel/carousel'
 import Imagegrid from './components/imagegrid/imagegrid';
 import DrinksPage from './pages/drinks/drinks'
+import CateringPage from './pages/catering/catering';
 function App() {
   return (
     <>
-    <DrinksPage></DrinksPage>
+    <CateringPage></CateringPage>
     </>
   );
 }
