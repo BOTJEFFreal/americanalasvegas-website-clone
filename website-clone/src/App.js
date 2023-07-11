@@ -9,7 +9,7 @@ import Imagegrid from './components/imagegrid/imagegrid';
 function App() {
   return (
     <>
-    <Imagegrid></Imagegrid>
+    <MenuPage></MenuPage>
     </>
   );
 }
