@@ -1,20 +1,12 @@
-.sundayBruch-desc {
-  margin: 20px 0px 30px;
-  justify-content: center;
-  text-align: center;
-
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #333;
-}
-.sundayBruch-list {
+.food-list {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 
 .container {
+  width: 28%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,7 +16,7 @@
   background: #fff;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   margin: 10px 20px;
-  padding: 20px 30px 30px;
+  padding: 20px 30px 20px;
   /* width: 27%; */
 
   /* background-color: aqua;  */
@@ -37,6 +29,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 35.42px;
+  margin: 20px 0px 10px;
 }
 
 .container p {
@@ -49,3 +42,8 @@
   line-height: 22.857px;
   margin: -5px 0px 0px 0px;
 }
+
+.drink-items {
+    margin: 15px 0px 15px;
+    padding: 10px;
+  }

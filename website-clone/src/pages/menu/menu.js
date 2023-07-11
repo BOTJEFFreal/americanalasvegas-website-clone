@@ -7,11 +7,8 @@ import Dinner from "./components/dinner/dinner"
 import SundayBrunch from "./components/sundayBrunch/sundayBrunch";
 import "./menu.css";
 function MenuPage() {
-  
-
   const [cardType, setCardType] = useState(0)
   return (
-    
     <div>
       <Header></Header>
         <div className="main-content bg">
@@ -29,8 +26,6 @@ function MenuPage() {
       {cardType === 2 && <Dessert></Dessert>}
       {cardType === 3 && <SundayBrunch></SundayBrunch>}
         
-        
-      
     </div>
     </div>
     
