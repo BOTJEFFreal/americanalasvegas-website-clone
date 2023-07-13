@@ -9,8 +9,8 @@
 
 .main-heading {
   padding-top: 40px;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 24%;
+  margin-right: 24%;
   /* margin-bottom: 24px; */
 }
 
@@ -26,6 +26,7 @@
 }
 
 .sub-heading {
+  /* width: 780px; */
   margin: 48px auto 48px auto;
   color: #4f5454;
   justify-content: center;
@@ -35,9 +36,6 @@
   font-style: normal;
   font-weight: 700;
   line-height: 26.4px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   /* margin: 0px; */
 }
 
