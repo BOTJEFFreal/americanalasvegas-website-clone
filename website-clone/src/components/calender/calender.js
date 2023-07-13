@@ -4,6 +4,8 @@ import 'react-datepicker/dist/react-datepicker.css';
 import './calender.css'
 
 const DatePickerComponent = () => {
+  const Currentdate = new Date();
+
   const [selectedDate, setSelectedDate] = useState(null);
 
   const handleChange = (date) => {
@@ -44,7 +46,7 @@ const DatePickerComponent = () => {
         selected={selectedDate}
         onChange={handleChange}
         dateFormat="MMM d, yyyy"
-        placeholderText="Select a date"
+        placeholderText={formatDate(Currentdate)}
         renderCustomHeader={({ date }) => (
           <div>
             <span>{formatDate(date)}</span>

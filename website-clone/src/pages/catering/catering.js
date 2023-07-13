@@ -18,8 +18,8 @@ function CateringPage() {
           </div>
         </div>
         <div className="form">
-          <InputTag></InputTag>
-          <InputTag></InputTag>
+          <InputTag placeholder="Name..."></InputTag>
+          <InputTag placeholder="Phone..."></InputTag>
           <div className="checkbox-row">
             <input type="checkbox" className="checkbox-polices"></input>
             <label>
@@ -30,7 +30,7 @@ function CateringPage() {
               </a>
             </label>
           </div>
-          <InputTag></InputTag>
+          <InputTag placeholder="Email..."></InputTag>
           <div className="time-container">
             <Dropdown></Dropdown>
             <DatePickerComponent></DatePickerComponent>
@@ -42,7 +42,7 @@ function CateringPage() {
           <div className="budget">
             <label>Budget per person:</label>
             <div className="budget-input-continer">
-              <InputTag></InputTag>
+              <InputTag type="moneyType"></InputTag>
             </div>
           </div>
           <textarea
