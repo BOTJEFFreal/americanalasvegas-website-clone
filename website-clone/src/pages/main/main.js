@@ -4,7 +4,7 @@ import Footer from "../../components/footer/footer";
 import Imagegrid from "../../components/imagegrid/imagegrid"
 function MainPage() {
   return (
-    <>
+    <div className="main-page">
       <Header></Header>
       <div className="main-content">
       <div className="red-banner">
@@ -143,7 +143,7 @@ function MainPage() {
             <source src="https://static.spotapps.co/website_videos/Americana_Website_Intro_EditedVideo_01142022_Vimeo720p30.m4v" type="video/mp4"></source></video>*/}
       
       <Footer></Footer>
-    </>
+    </div>
   );
 }
 

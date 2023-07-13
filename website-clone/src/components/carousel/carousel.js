@@ -1,23 +1,31 @@
 import React, { useState, useEffect } from 'react';
 import './carousel.css'
+
 const Carousel = () => {
   const slides = [
-    { id: 1, imageUrl: './image1.png' },
-    { id: 2, imageUrl: './image2.png' },
-    { id: 3, imageUrl: './image3.png' }
+    { id: 1, imageUrl: 'https://picsum.photos/id/237/600/1900' },
+    { id: 2, imageUrl: 'https://picsum.photos/id/238/600/1900' },
+    { id: 3, imageUrl: 'https://picsum.photos/id/239/600/1900' }
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+
+  const handlePauseClick = () => {
+    setIsPaused((prevState) => !prevState);
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+      if (!isPaused) {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+      }
     }, 3000);
 
     return () => {
       clearInterval(interval);
     };
-  }, [slides.length]);
+  }, [slides.length, isPaused]);
 
   const handleIndicatorClick = (index) => {
     setCurrentIndex(index);
@@ -33,6 +41,7 @@ const Carousel = () => {
           <img src={slide.imageUrl} alt={`Slide ${slide.id}`} />
         </div>
       ))}
+      <div className='controllers'>
       <div className="indicators">
         {slides.map((slide, index) => (
           <span
@@ -42,6 +51,13 @@ const Carousel = () => {
           ></span>
         ))}
       </div>
+      <div className="controls">
+        <button className="control-btn" onClick={handlePauseClick}>
+          {isPaused ? 'Play' : 'Pause'}
+        </button>
+      </div>
+      </div>
+      
     </div>
   );
 };

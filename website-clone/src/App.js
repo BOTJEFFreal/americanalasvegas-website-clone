@@ -8,10 +8,12 @@ import Carousel from './components/carousel/carousel'
 import Imagegrid from './components/imagegrid/imagegrid';
 import DrinksPage from './pages/drinks/drinks'
 import CateringPage from './pages/catering/catering';
+import ReservationPage from  './pages/reservation/reservation';
+
 function App() {
   return (
     <>
-    <CateringPage></CateringPage>
+    <MainPage></MainPage>
     </>
   );
 }

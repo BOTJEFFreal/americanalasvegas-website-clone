@@ -1,7 +1,7 @@
 import "./imagegrid.css";
 
 function Imagegrid() {
-  return(<div class="parent">
+  return(<div class="grid">
   <div class="div1"> </div>
   <div class="div2"> </div>
   <div class="div3"> </div>
