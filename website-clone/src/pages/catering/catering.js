@@ -10,7 +10,7 @@ function CateringPage() {
 
       <div className="main-container">
         <div class="main-heading">
-          <h1>Careers</h1>
+          <h1>Catering</h1>
           <div class="sub-heading">
             Please fill out the form below and we'll do our best to accommodate
             your desired date and any requests you may have to make your
