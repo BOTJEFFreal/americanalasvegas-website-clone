@@ -1,0 +1,29 @@
+.dropdown{
+  margin: 9px 0px 9px;
+  width: 100%;
+}
+
+.dropdown-container {
+  position: relative;
+   /* Adjust the width as needed */
+  border: none; /* Remove the border */
+  border-radius: 6px;
+  width: 100%;
+
+
+  box-shadow: none; /* Remove the box-shadow */
+  /* margin: 9x; */
+  padding: 10px 11px 10px 7px;
+
+  color: #1a1a1a;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22.4px; /* 140% */
+}
+
+option {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
