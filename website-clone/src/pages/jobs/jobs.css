@@ -1,18 +1,13 @@
 
-.Main-container {
+/* .Main-container {
   display: block;
   flex-direction: column;
   background-color: #f7f8fa;
   margin-bottom: 130px;
   /* justify-content: center;
-  align-items: center; */
-}
+  align-items: center; }*/
 
-.main-heading{
-  margin-left: 25%;
-  margin-right: 25%;
-  
-}
+
 .form {
   margin-top: 20px;
   height: 70%;
@@ -21,34 +16,6 @@
   align-self: center;
 }
 
-.main-heading h1 {
-  color: #212529;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 40px;
-}
-
-.sub-heading{
-  margin: 48px auto 8px auto;
- 
-}
-.sub-heading p{
-  color: #4f5454;
-  justify-content: center;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 17.6px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 26.4px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin: 0px;
-}
 
 
 .asap {
@@ -69,12 +36,6 @@
     display: inline;
   }
 }
-
-.main-heading a {
-  color: #212529;
-  text-decoration: none;
-}
-
 .checkbox-row {
   display: flex;
   flex-direction: row;

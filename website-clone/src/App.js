@@ -13,7 +13,7 @@ import ReservationPage from  './pages/reservation/reservation';
 function App() {
   return (
     <>
-    <ReservationPage></ReservationPage>
+    <MenuPage></MenuPage>
     </>
   );
 }

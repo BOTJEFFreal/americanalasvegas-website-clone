@@ -3,11 +3,11 @@ import menuItem from '../../../../components/menuItem/menuItem';
 
 function Dessert(){
     const items = [
-        { id: 1, title: "Item 1", description: "Description for Item 1" },
-        { id: 2, title: "Item 2", description: "Description for Item 2" },
-        { id: 3, title: "Item 3", description: "Description for Item 3" },
-        { id: 4, title: "Item 4", description: "Description for Item 4" },
-        { id: 5, title: "Item 5", description: "Description for Item 5" },
+        { id: 1, title: "Raspberry Cheesecake", description: "Chocolate Spoon | Berry Sauce", price:"$11.00" },
+        { id: 2, title: "Desert Honey Crème Brûlée", description: "Honeycomb Candy | Sugar Tuile", price: "$10.00"},
+        { id: 3, title: "Chocolate Mousse Cake", description: "Candied Pecans | Carmel Sauce", price:"$12.00" },
+        { id: 4, title: "Opera Cake", description: "Creme Anglaise | Chantilly Cream + Ala Mode $3", price:"$12.00" },
+        { id: 5, title: "Chef’s Selection of Sorbets", description: "", price: "$10.00"},
        ];
     return(
         <div className="food-list">
