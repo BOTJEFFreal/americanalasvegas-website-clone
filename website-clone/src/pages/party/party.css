@@ -4,7 +4,7 @@
   background-color: #f7f8fa;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 .main-heading {
   text-align: center;

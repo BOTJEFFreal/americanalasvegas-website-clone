@@ -14,75 +14,7 @@
   font-style: normal;
 } */
 
-.main-heading { 
-  margin: 0px 25% 28px 25%;
-  padding-left: 30px; 
-  padding-right: 30px; 
 
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-} 
-
-.main-heading-text { 
-  color: #212529;
-text-align: center;
-font-family: Roboto;
-font-size: 40px;
-font-style: normal;
-font-weight: 700;
-line-height: 40px;
-  
-} 
-
- .sub-heading { 
-  margin-top: 24px;
-  margin-bottom: .5rem; 
-  font-size:  17.6px;
-  line-height: 26.4px;
-  text-align: center;
-} 
-
-.Main-container {
-  display: flex;
-  background-color: #f7f8fa;
-  margin-bottom: 130px;
-  justify-content: center;
-  align-items: center; 
-}
-
-.Main-heading {
-  width: 100%;
-  /* margin: 0px 20%; */
-  padding-top: 40px;
-  width: 780px;
-
-  /* margin-bottom: 24px; */
-}
-
-.Main-heading h1 {
-  width: 100%;
-  color: #212529;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 2.5em;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 40px;
-  margin: 0px;
-}
-
-.Sub-heading {
-  /* width: 780px; */
-  margin: 48px auto 48px auto;
-  color: #000;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 17.6px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 26.4px; 
-}
 
 .form {
   margin-top: 20px;

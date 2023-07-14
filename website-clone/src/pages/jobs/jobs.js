@@ -1,25 +1,16 @@
 import InputTag from "../../components/inputTag/inputTag";
 import HeaderSmall from "../../components/headerSmall/headerSmall";
+import HeaderTextContainer from "../../components/headerTextContainer/headerTextContainer";
+
 import "./jobs.css";
+
 function JobsPage() {
   return (
     <>
       <HeaderSmall></HeaderSmall>
 
       <div className="Main-container">
-        <div class="main-heading">
-          <h1>Careers</h1>
-          <div class="sub-heading">
-            <h2>
-              We are hiring! Apply below to become a part of our awesome team
-              and we'll get back to you ASAP!
-            </h2>
-            <h2>
-              Alternatively if you have questions you can call us at
-              <a href="tel:(702) 331-5565">(702) 331-5565</a>
-            </h2>
-          </div>
-        </div>
+        <HeaderTextContainer></HeaderTextContainer>
         <div className="form">
           <InputTag></InputTag>
           <InputTag></InputTag>

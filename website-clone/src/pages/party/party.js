@@ -2,21 +2,14 @@ import HeaderSmall from "../../components/headerSmall/headerSmall";
 import InputTag from "../../components/inputTag/inputTag";
 import DropdownComponent from "../../components/dropdown/dropdown"
 import DatePickerComponent from "../../components/calender/calender"
+import HeaderTextContainer from "../../components/headerTextContainer/headerTextContainer";
 import "./party.css";
 function PartyPages() {
   return (
     <>
       <HeaderSmall></HeaderSmall>
       <div className="Main-container">
-        <div className="main-heading">
-          <h1>Group Reservations and Private Parties</h1>
-          <p>
-            Whether it's a bday party, baby shower, office function or any other
-            special event, please fill out the form below and we'll do our best
-            to accommodate your desired date and any requests you may have to
-            make your party/celebration memorable.
-          </p>
-        </div>
+        <HeaderTextContainer></HeaderTextContainer>
         <div className="form">
           <InputTag></InputTag>
           <InputTag></InputTag>

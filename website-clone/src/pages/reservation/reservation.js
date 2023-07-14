@@ -2,6 +2,7 @@ import InputTag from "../../components/inputTag/inputTag";
 import HeaderSmall from "../../components/headerSmall/headerSmall";
 import Dropdown from "../../components/dropdown/dropdown";
 import DatePickerComponent from "../../components/calender/calender";
+import HeaderTextContainer from "../../components/headerTextContainer/headerTextContainer";
 import "./reservation.css";
 function ReservationPage() {
   return (
@@ -9,18 +10,7 @@ function ReservationPage() {
       <HeaderSmall></HeaderSmall>
 
       <div className="Main-container">
-        <div class="main-heading">
-          <div className="main-heading-container">
-          <div className="main-heading-text">Group Reservations and Private Parties</div>
-          <div class="sub-heading">
-            Whether it's a bday party, baby shower, office function or any other
-            special event, please fill out the form below and we'll do our best
-            to accommodate your desired date and any requests you may have to
-            make your party/celebration memorable.
-          </div>
-          </div>
-          
-        </div>
+        <HeaderTextContainer></HeaderTextContainer>
         <div className="form">
           <InputTag placeholder="Name..."></InputTag>
           <InputTag placeholder="Phone..."></InputTag>

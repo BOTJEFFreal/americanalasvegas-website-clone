@@ -1,0 +1,28 @@
+.main-heading {
+  margin: 0px 25% 28px 25%;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-heading-text {
+  color: #212529;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.sub-heading {
+  margin-top: 24px;
+  margin-bottom: 0.5rem;
+  font-size: 17.6px;
+  line-height: 26.4px;
+  text-align: center;
+}
+
