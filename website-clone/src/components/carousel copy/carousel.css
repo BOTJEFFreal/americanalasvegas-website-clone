@@ -1,4 +1,8 @@
-/* .carousel {
+.carousel-container {
+  display: flex;
+}
+
+.carousel {
   display: flex;
   position: relative;
   width: 100%;
@@ -26,20 +30,20 @@
   object-fit: cover;
 }
 
-.controllers{
+.controllers {
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-}
-
-.indicators {
-  margin-top: 15px;
   position: absolute;
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.indicators {
   display: flex;
+  margin-bottom: 15px;
 }
 
 .indicator {
@@ -48,33 +52,30 @@
   border-radius: 50%;
   stroke-width: 1px;
   stroke: #fff;
-  border: 2px solid #fff;
-  margin: 15px 0px 0px 15px;
+  border: 2px solid #a31521;
+  margin: 0 5px;
+  cursor: pointer;
 }
 
 .indicator.active {
-  background-color: #fff;
+  background-color: #a31521;
 }
 
 .controls {
-  position: absolute;
-  top: 90%;
-  left: 95%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
+  display: flex;
+  justify-content: space-between;
+  /* width: 100px; */
+  margin-top: 5px;
 }
-
-
-.controls :hover{
-    opacity: 1;
-  }
-
 
 .control-btn {
   background-color: transparent;
   border: none;
-  color: #fff;
-  font-size: 16px;
+  color: #d52020;
+  /* font-size: 16px; */
   cursor: pointer;
-  margin: 0 5px;
-} */
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

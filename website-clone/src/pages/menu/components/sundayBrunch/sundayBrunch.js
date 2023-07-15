@@ -31,8 +31,8 @@ function SundayBrunch(){
       <div className="container">
         <h1>Appetizers</h1>
         <div className="food-items">
-          {items.map((item) => {
-            return menuItem(item.type);
+          {savoryItems.map((item) => {
+            return menuItem(item.description);
           })}
         </div>
       </div>
@@ -40,8 +40,8 @@ function SundayBrunch(){
         <h1>Entrees</h1>
         <p>20% Gratuity will be added to parties 6 or more</p>
         <div className="food-items">
-          {items.map((item) => {
-            return menuItem(item.type);
+          {sweetItems.map((item) => {
+            return menuItem(item.description);
           })}
         </div>
       </div>
