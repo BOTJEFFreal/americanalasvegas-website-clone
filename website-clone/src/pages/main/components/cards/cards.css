@@ -16,7 +16,6 @@
 
 .catering-us-left {
   width: 50%;
-
   padding: 60px 9% 60px 3.2%;
 }
 
@@ -92,7 +91,7 @@
 
 .catering-us-right {
   width: 50%;
-  padding: 70px 4%;
+  /* padding: 70px 4%; */
 }
 
 .catering-us-right img {

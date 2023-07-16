@@ -6,44 +6,27 @@ import Footer from "../../components/footer/footer";
 import Imagegrid from "../../components/imagegrid/imagegrid"
 import partiesImg from "./components/cards/parties.png";
 import cateringImg from "./components/cards/catering.png";
+import AboutUsCardComponent from "./components/aboutUScard/aboutUscard";
 // import borderImage from './border.svg';
 // import borderImage2 from './Vector.svg';
+import '@fortawesome/fontawesome-free/css/all.css';
+
 
 function MainPage() {
   return (
     <div className="main-page">
-      <Header></Header>
+      {/* <Header></Header> */}
       <div className="main-content">
      
       <div className="red-banner">
         <h1>
           <a href="#" className="location-pin">
-            <i>L</i>
+            <i className="fa fa-map-marker"></i>
           </a>
-          2620 Regatta Drive, Las Vegas, NV 89128
+          2620 Regatta Drive, Las Vegas, NV 89128 
         </h1>
       </div>
-      <div className="about-us">
-        <div className="about-us-left">
-          <img src="./about-us.png" alt="Italian Trulli"></img>
-        </div>
-        <div className="about-us-right">
-          <div className="about-us-container">
-            <div className="about-us-heading">
-              <p>About Us</p>
-              <img className="banner" src="./banner.png" alt="Banner"></img>
-              <div className="about-us-content">
-                Americana brings incredible blends of various cultures to the
-                Desert Shores community in Las Vegas. The restaurant offers fine
-                dining with a blended cultural theme of modern American cuisine.
-              </div>
-              <div className="about-us-button">
-                <button>Read More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <AboutUsCardComponent/>
       <CardsComponents toggle={true} heading="Catering" subheading="Let us cater your next event" content=" We Cater your Needs. Elegant style of catering for your style
                 and budget. Any kind of event from weddings to birthdays." img={cateringImg}/>
       <CardsComponents toggle={false} heading="Parties" subheading="Book your next party with us!" content="No matter the occasion you can celebrate at our place! Book a private party." img={partiesImg}/>
