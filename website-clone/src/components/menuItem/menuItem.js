@@ -1,17 +1,17 @@
 import "./menuItem.css";
 
-function menuItem() {
+function menuItem(props) {
   return (
     <>
       <div class="food-item-holder">
         <div className="food">
         <div class="food-item-title">
-          <h3>Grilled Petite Ribeye Steak*</h3>
+          {props.title}
         </div>
-        <div class="food-price">$37.00</div>
+        <div class="food-price">{props.price}</div>
         </div>
         <div class="food-item-description">
-          Hen Of the Woods Mushroom | Red Wine Natural | Potato Puree
+          {props.content}
         </div>
       </div>
     </>

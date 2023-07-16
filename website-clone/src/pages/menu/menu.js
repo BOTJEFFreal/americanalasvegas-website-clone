@@ -23,7 +23,7 @@ function MenuPage() {
       </div>
       {cardType === 0 && <Food></Food>}
       {cardType === 1 && <Dinner></Dinner>}
-      {cardType === 2 && <Dessert></Dessert>}
+      {cardType === 2 && <Dessert></Dessert>} 
       {cardType === 3 && <SundayBrunch></SundayBrunch>}
         
     </div>

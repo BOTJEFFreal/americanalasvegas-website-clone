@@ -5,7 +5,7 @@
     margin-top: 50px;
   }
   
-  .container {
+  .food-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,12 +15,12 @@
     background: #fff;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     margin: 10px 20px;
-    padding: 20px 30px 30px;
+    padding: 15px 20px 15px;
     /* width: 27%; */
   
     /* background-color: aqua;  */
   }
-  .container h1 {
+  .food-container h1 {
     color: #000;
     text-align: center;
     font-family: Parisienne;
@@ -30,7 +30,7 @@
     line-height: 35.42px;
   } 
   
-  .container p {
+  .food-container p {
     color: #000;
     text-align: center;
     font-family: Montserrat;
@@ -39,4 +39,23 @@
     font-weight: 400;
     line-height: 22.857px;
     margin: -5px 0px 0px 0px;
+  }
+
+  .food-items{
+    width: 100%;
+  }
+
+  @media (max-width:766px) {
+    .food-list{
+      flex-direction: column;
+    }
+      .food-container h1 {
+        font-size: 21px;
+      }
+    .food-container{
+      width: 95%;
+      margin: 10px;
+      
+    }
+    
   }

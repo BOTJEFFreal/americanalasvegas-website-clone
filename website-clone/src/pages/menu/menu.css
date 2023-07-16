@@ -17,7 +17,7 @@
 .food-menu {
   padding-top: 10px;
   width: 100%;
-}
+} 
 
 .food-menu h1 {
   color: #000;
@@ -38,10 +38,10 @@
 }
 
 .food-menu-nav button {
-  border: 2px solid #002e48;
+  border: 0.8px solid #002e48;
   background: #002e48;
   min-width: 160px;
-  padding: 10px 41.92px 11.84px 42px;
+  padding: 10px 4% 10px 4%;
   margin: 10px;
   margin-right: 20px;
 
@@ -69,5 +69,16 @@
   100% {
     border: 2px solid #a31521;
     background: #a31521;
+  }
+}
+
+@media (max-width:766px){
+  .food-menu-nav{
+    flex-direction: column;
+  }
+  .food-menu-nav button {
+    margin: 0px;
+    width: 100%;
+    padding: 7px 30px;
   }
 }
