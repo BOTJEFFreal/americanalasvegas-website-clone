@@ -1,12 +1,11 @@
-.food-list {
+.coffee-list {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
 }
 
-.container {
-  width: 28%;
+.coffee-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,12 +15,12 @@
   background: #fff;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   margin: 10px 20px;
-  padding: 20px 30px 20px;
+  padding: 15px 20px 15px 5px;
   /* width: 27%; */
 
   /* background-color: aqua;  */
 }
-.container h1 {
+.coffee-container h1 {
   color: #000;
   text-align: center;
   font-family: Parisienne;
@@ -29,10 +28,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: 35.42px;
-  margin: 20px 0px 10px;
 }
 
-.container p {
+.coddee-container p {
   color: #000;
   text-align: center;
   font-family: Montserrat;
@@ -43,7 +41,21 @@
   margin: -5px 0px 0px 0px;
 }
 
-.drink-items {
-    margin: 15px 0px 15px;
-    padding: 10px;
+.coffee-items {
+  width: 100%;
+}
+
+@media (max-width: 766px) {
+  .coffee-list {
+    flex-direction: column;
   }
+  .coffee-container h1 {
+    font-size: 21px;
+  }
+  .coffee-container {
+    width: 95%;
+    margin: 10px;
+    padding: 15px 20px 15px 5px;
+
+  }
+}
