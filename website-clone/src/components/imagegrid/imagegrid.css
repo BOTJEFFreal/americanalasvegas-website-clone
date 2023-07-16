@@ -6,18 +6,31 @@
 
 .grid > div {
   background: #000000;
-  padding: 1rem;
+  /* padding: 1rem; */
   display: grid;
+}
 
+grid > div::before,
+.grid > div > img {
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 .grid > div::before {
   content: "";
-  padding-bottom: 100%;
   display: block;
 }
+
+.grid > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
   
-  .div1 {
+.div1 {
     grid-column: span 2;
     grid-row: span 2;
-  }
+}
+
+

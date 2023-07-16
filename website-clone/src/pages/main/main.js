@@ -1,12 +1,20 @@
 import "./main.css";
 import Header from "../../components/header/header";
+import CardsComponents from "./components/cards/cards";
+
 import Footer from "../../components/footer/footer";
 import Imagegrid from "../../components/imagegrid/imagegrid"
+import partiesImg from "./components/cards/parties.png";
+import cateringImg from "./components/cards/catering.png";
+// import borderImage from './border.svg';
+// import borderImage2 from './Vector.svg';
+
 function MainPage() {
   return (
     <div className="main-page">
       <Header></Header>
       <div className="main-content">
+     
       <div className="red-banner">
         <h1>
           <a href="#" className="location-pin">
@@ -36,54 +44,10 @@ function MainPage() {
           </div>
         </div>
       </div>
-      <div className="cards">
-        <div className="catering">
-          <div className="catering-us-left">
-            <div className="catering-us-container">
-              <div className="catering-us-heading">
-                <p>Catering</p>
-                <img className="banner" src="./banner.png" alt="Banner"></img>
-                <div className="catering-us-subheading">
-                  Let us cater your next event
-                </div>
-                <div className="catering-us-content">
-                  We Cater your Needs. Elegant style of catering for your style
-                  and budget. Any kind of event from weddings to birthdays.
-                </div>
-                <div className="catering-us-button">
-                  <button>Read More</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="catering-us-right">
-            <img src="./about-us.png" alt="Italian Trulli"></img>
-          </div>
-        </div>
-        <div className="catering">
-          <div className="catering-us-left">
-            <div className="catering-us-container">
-              <div className="catering-us-heading">
-                <p>Catering</p>
-                <img className="banner" src="./banner.png" alt="Banner"></img>
-                <div className="catering-us-subheading">
-                  Let us cater your next event
-                </div>
-                <div className="catering-us-content">
-                  We Cater your Needs. Elegant style of catering for your style
-                  and budget. Any kind of event from weddings to birthdays.
-                </div>
-                <div className="catering-us-button">
-                  <button>Read More</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="catering-us-right">
-            <img src="./about-us.png" alt="Italian Trulli"></img>
-          </div>
-        </div>
-      </div>
+      <CardsComponents toggle={true} heading="Catering" subheading="Let us cater your next event" content=" We Cater your Needs. Elegant style of catering for your style
+                and budget. Any kind of event from weddings to birthdays." img={cateringImg}/>
+      <CardsComponents toggle={false} heading="Parties" subheading="Book your next party with us!" content="No matter the occasion you can celebrate at our place! Book a private party." img={partiesImg}/>
+      {/* <img className="imggg" src ={borderImage} alt="My Happy SVG"/> */}
       <div className="reservation-section">
         <div className="reservation-heading">
           <h1>Reservations</h1>
