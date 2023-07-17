@@ -1,6 +1,5 @@
-import './coffee.css'
-import drinkItem from '../../../../components/drinkItem/drinkItem';
-import MenuItem from '../../../../components/menuItem/menuItem';
+import './drinkslist.css'
+import MenuItem from '../../../components/menuItem/menuItem';
 
 function Coffee(){
     const coffeeitems = [
@@ -26,7 +25,7 @@ function Coffee(){
             {coffeeitems.map((item) => {
             return <MenuItem title = {item.title} price ={item.price} content= ""/>;
             })}
-          </div>
+          </div> 
         </div>
         <div className="coffee-container"> 
           <h1>Mighty Leaf Teas</h1>

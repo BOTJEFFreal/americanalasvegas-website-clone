@@ -1,31 +1,47 @@
-import { useState } from 'react';
-import Header from '../../components/header/header';
-import Coffee from './components/coffee/coffee';
-import Wine from './components/wine/wine';
-import Liqueurs from './components/liqueurs/liqueurs';
-import './drinks.css'
- 
-function DrinksPage(){
-    const [cardType, setCardType] = useState(0)
+import { useState } from "react";
+import Header from "../../components/header/header";
+import Coffee from "./components/coffee";
+import Wine from "./components/wine";
+import Liqueurs from "./components/liqueurs";
+import "./drinks.css";
+
+function DrinksPage() {
+  const [cardType, setCardType] = useState(0);
   return (
-    <div>
+    <div className="bg">
       <Header></Header>
-        <div className="main-content bg">
-      <div className="food-menu">
-        <h1>OUR MENU</h1>
-        <div className="food-menu-nav">
-          <button onClick={()=>{setCardType(0)}}>COFFEE & TEA</button>
-          <button onClick={()=>{setCardType(1)}}>WINE</button>
-          <button onClick={()=>{setCardType(2)}}>Liqueurs</button>
+      <div className="main-content">
+        <div className="drink-menu">
+          <h1 className="drink-heading">OUR DRINKS</h1>
+          <div className="drink-menu-nav">
+            <button className={cardType === 0 && `red-color-button`}
+              onClick={() => {
+                setCardType(0);
+              }}
+            >
+              COFFEE & TEA
+            </button>
+            <button className={cardType === 1 && `red-color-button`}
+              onClick={() => {
+                setCardType(1);
+              }}
+            >
+              WINE
+            </button>
+            <button className={cardType === 2 && `red-color-button`}
+              onClick={() => {
+                setCardType(2);
+              }}
+            >
+              Liqueurs
+            </button>
+          </div>
         </div>
+        {cardType === 0 && <Coffee></Coffee>}
+        {cardType === 1 && <Wine></Wine>}
+        {cardType === 2 && <Liqueurs></Liqueurs>}
       </div>
-      {cardType === 0 && <Coffee></Coffee>}
-      {cardType === 1 && <Wine></Wine>}
-      {cardType === 2 && <Liqueurs></Liqueurs>}
-        
     </div>
-    </div>
-    
   );
 }
 

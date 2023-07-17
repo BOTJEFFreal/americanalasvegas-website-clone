@@ -1,5 +1,5 @@
-import './liqueurs.css'
-import menuItem from '../../../../components/menuItem/menuItem';
+import './drinkslist.css'
+import MenuItem from '../../../components/menuItem/menuItem';
 
 function Liqueurs(){
     const items = [
@@ -12,13 +12,13 @@ function Liqueurs(){
         { id: 7, title: "Grand Marnier", price: "$12.00" },
        ];
     return(
-        <div className="food-list">
-        <div className="container">
-          <h1>Menu</h1>
-          <div className="food-items">
+        <div className="coffee-list list-extra-margin">
+        <div className="coffee-container container-extra-margin">
+          <h1>Liqueurs</h1>
+          <div className="coffee-items">
             {items.map((item) => {
-              return menuItem(item.type);
-            })}
+            return <MenuItem title = {item.title} price ={item.price} content= ""/>;
+          })}
           </div>
         </div>
         </div>

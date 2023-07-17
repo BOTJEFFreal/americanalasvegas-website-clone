@@ -2,29 +2,40 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
-}
+  padding: 10px 15px 40px;
+  margin: 0px 2.2%;
+} 
+
+.list-extra-margin{
+  margin: 0px 5.4%;
+} 
 
 .coffee-container {
-  display: flex;
+  display: flex;  
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+
   border-left: 1px solid #e4e4e4;
   padding-left: 4px;
   background: #fff;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   margin: 10px 20px;
-  padding: 15px 20px 15px 5px;
-  /* width: 27%; */
+  padding: 20px 30px;
 
   /* background-color: aqua;  */
+}
+
+.container-extra-margin{
+  margin: 10px 22%;
+
 }
 .coffee-container h1 {
   color: #000;
   text-align: center;
   font-family: Parisienne;
-  font-size: 31.2px;
+  font-size: 22.4px;
   font-style: normal;
   font-weight: 400;
   line-height: 35.42px;
@@ -49,13 +60,14 @@
   .coffee-list {
     flex-direction: column;
   }
-  .coffee-container h1 {
-    font-size: 21px;
-  }
   .coffee-container {
     width: 95%;
     margin: 10px;
-    padding: 15px 20px 15px 5px;
+    padding: 15px 20px;
 
   }
+  .coffee-container h1 {
+    font-size: 21px;
+  }
+  
 }
