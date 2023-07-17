@@ -1,5 +1,4 @@
 .header {
-  position: fixed;
   top: 0;
   left: 0;
   display: flex;
@@ -20,13 +19,11 @@
   height: 66px;
   width: 200px;
   transition: padding 3s ease;
-
 }
 
-.logo-image.scrolled  {
+.logo-image.scrolled {
   height: 52px;
   width: 170px;
-
 }
 
 .header a {
@@ -51,6 +48,8 @@
 
 .header-right {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .vl {
@@ -60,10 +59,39 @@
 }
 
 .icon {
+  display: flex;
   margin: 0px 10px;
+  justify-content: center;
+  align-items: center;
 }
 
-@media screen and (max-width: 500px) {
+.bottom-nav {
+  overflow: hidden;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  justify-content: space-evenly;
+  display: none;
+
+}
+
+.bottom-nav-button {
+  color: #000;
+  font-family: "DM Serif Display", serif;
+  font-size: 14px;
+  padding: 15px 5px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 766px) {
+  .header {
+    padding: 10px;
+  }
+  .logo-image {
+    width: 120px;
+    height: 40px;
+  }
   .header a {
     float: none;
     display: block;
@@ -72,6 +100,13 @@
   .header-right {
     float: none;
   }
+
+  .header a,
+  .vl {
+    display: none !important;
+  }
+  .bottom-nav{
+    display: flex;
+
+  }
 }
-
-

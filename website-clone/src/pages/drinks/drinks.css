@@ -71,18 +71,7 @@
       background: #a31521;
     }
   }
-  
 
-  @keyframes button-color-change {
-    0% {
-      border: 2px solid #002e48;
-      background: #002e48;
-    }
-    100% {
-      border: 2px solid #a31521;
-      background: #a31521;
-    }
-  }
   
   @media (max-width:766px){
     .food-menu-nav{

@@ -39,7 +39,7 @@
 @media (max-width: 766px) {
   .food-item-holder {
     padding: 15px 30px 15px 10px;
-  }
+    }
   .food-item-title{
     display: block;
     font-size: 15.4px;
