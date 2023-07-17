@@ -45,6 +45,18 @@ video {
   background-color: #a31521;
   color: #fff;
   text-align: center;
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
 }
 .red-banner i {
   padding: 10px 10px 0px 10px;

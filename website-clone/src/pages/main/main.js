@@ -1,4 +1,6 @@
 import "./main.css";
+import { useInView } from "react-intersection-observer";
+import { useState, useRef, useEffect } from "react";
 import Header from "../../components/header/header";
 import CardsComponents from "./components/cards/cards";
 
@@ -12,27 +14,24 @@ import Reservation from "./components/reservation/reservation";
 // import borderImage from './border.svg';
 // import borderImage2 from './Vector.svg';
 import "@fortawesome/fontawesome-free/css/all.css";
-import video from './video.mp4'
+import video from "./video.mp4";
 
-function MainPage() {
+const MainPage = () => {  
   return (
     <div className="main-page">
       <Header></Header>
       <div className="main-content">
         <div className="video-player">
-        <video autoplay loop muted>
-          <source
-            src={video}
-          ></source>
-          Your browser does not support the video tag.
-        </video>
+          <video autoplay loop muted>
+            <source src={video}></source>
+            Your browser does not support the video tag.
+          </video>
         </div>
-       
 
         <div className="red-banner">
           <h1>
             <a href="#" className="location-pin">
-              <i className="fa fa-map-marker"></i>
+              <i className="fa fa-map-marker"></i> 
             </a>
             2620 Regatta Drive, Las Vegas, NV 89128
           </h1>

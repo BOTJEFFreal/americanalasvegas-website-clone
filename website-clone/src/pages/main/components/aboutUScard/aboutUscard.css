@@ -23,9 +23,10 @@
     font-weight: 400;
     line-height: 73.92px;
     text-transform: uppercase;
-    margin: 0px;
+    margin: 0px;  
+    opacity: 0;
   }
-  
+
   
   .about-us-content {
     color: #000;
@@ -37,6 +38,7 @@
     line-height: 26px;
     text-align: center;
     margin: 15px 0px;
+    opacity: 0;
   }
   
   .about-us-button {
@@ -60,6 +62,9 @@
     font-weight: 400;
     line-height: 22.857px;
     text-transform: uppercase;
+    transform: translateX(-100%);
+    opacity: 0;
+
   }
 
   .about-us-left {
@@ -71,5 +76,71 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 0;
   }
   
+
+  .animate1 {
+    animation-name: enterFromRight;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  
+  .animate2 {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+  }
+  
+  .animate3 {
+    animation-name: enterFromRight2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+  }
+
+  @keyframes enterFromRight {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes enterFromRight2 {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes enterFromBottom {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+    
+ 

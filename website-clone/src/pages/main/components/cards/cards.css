@@ -32,6 +32,8 @@
   line-height: 73.92px;
   text-transform: uppercase;
   margin: 0px;
+  opacity: 0;
+
 }
 .catering-us-subheading {
   color: #002e48;
@@ -42,6 +44,8 @@
   font-weight: 400;
   line-height: 35.42px;
   margin: 15px 0px;
+  opacity: 0;
+
 }
 
 .catering-us-content {
@@ -54,6 +58,8 @@
   line-height: 26px;
   text-align: center;
   margin: 15px 0px;
+  opacity: 0;
+
 }
 
 .catering-us-button {
@@ -62,6 +68,8 @@
   margin: 15px 0px;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+
 }
 
 .catering-us-button button {
@@ -77,6 +85,7 @@
   font-weight: 400;
   line-height: 22.857px;
   text-transform: uppercase;
+  
 }
 
 .catering-us-button button:hover {
@@ -98,4 +107,91 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0;
 }
+
+.fade-in-animation{
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+.bottom-up-animation{
+  animation-name: enterFromBottom;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  /* animation-delay: 1s; */
+}
+.bottom-up-animation2{
+  animation-name: enterFromBottom;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+.bottom-up-animation3{
+  animation-name: enterFromBottom;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  /* animation-delay: 1s; */
+}
+.left-animation{
+  animation-name: enterFromLeft;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  /* animation-delay: 1s; */
+}
+.right-animation2{
+  animation-name: enterFromRight;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+.right-animation3{
+  animation-name: enterFromRight;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  /* animation-delay: 1s; */
+}
+@keyframes enterFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes enterFromRight{
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes enterFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  
