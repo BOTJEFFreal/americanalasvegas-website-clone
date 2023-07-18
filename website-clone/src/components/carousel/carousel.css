@@ -1,4 +1,4 @@
-/* .carousel {
+.carousel-img {
   display: flex;
   position: relative;
   width: 100%;
@@ -26,14 +26,14 @@
   object-fit: cover;
 }
 
-.controllers{
+.controllers-img{
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.indicators {
+.indicators-img {
   margin-top: 15px;
   position: absolute;
   bottom: 10px;
@@ -42,7 +42,7 @@
   display: flex;
 }
 
-.indicator {
+.indicator-img {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -52,29 +52,41 @@
   margin: 15px 0px 0px 15px;
 }
 
-.indicator.active {
+.indicator-img.active {
   background-color: #fff;
 }
 
-.controls {
+.controls-img {
   position: absolute;
   top: 90%;
   left: 95%;
   transform: translate(-50%, -50%);
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 
-.controls :hover{
-    opacity: 1;
-  }
 
 
-.control-btn {
+
+.control-btn-img {
   background-color: transparent;
   border: none;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
   margin: 0 5px;
-} */
+  /* transform: translate(0%, 0%); */
+
+}
+
+.control-btn-img svg {
+  width: 30px;
+  height: 40px; 
+  fill: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+
+}
+
+.carousel-img:hover .control-btn-img svg {
+    opacity: 1 !important;
+  }

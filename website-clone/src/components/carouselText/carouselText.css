@@ -1,0 +1,116 @@
+.carousel {
+  display: block;
+}
+
+.title {
+  color: #000;
+  text-align: center;
+  font-family: DM Serif Display;
+  font-size: 4.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4.62rem; /* 110% */
+  text-transform: uppercase;
+}
+.carousel-cards {
+  display: flex;
+  height: 360px;
+  width: 100%;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+/* .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+} */
+
+.controllers {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* position: sticky; */
+  justify-content: center;
+  align-items: center;
+}
+
+.indicators {
+  margin-top: 15px;
+  transform: translateX(0%) translateY(0%);
+  display: flex;
+}
+
+.indicator {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  stroke-width: 1px;
+  stroke: #a31521;
+  border: 2px solid #a31521;
+  margin: 15px 0px 0px 15px;
+}
+
+.indicator.active {
+  background-color: #a31521;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  transform: translateX(0%) translateY(0%);
+}
+
+.control-btn {
+  background-color: transparent;
+  display: flex;
+  border: none;
+  color: #cd1919;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.controllers {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.indicators {
+  display: flex;
+  align-items: center;
+}
+*/ .indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: #a31521;
+}
+
+.control-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: #a31521;
+}

@@ -11,10 +11,13 @@ import cateringImg from "./components/cards/catering.png";
 import AboutUsCardComponent from "./components/aboutUScard/aboutUscard";
 import MapComponent from "./components/map/map";
 import Reservation from "./components/reservation/reservation";
+import CarouselText from "../../components/carouselText/carouselText";
+import Carousel from "../../components/carousel/carousel";
 // import borderImage from './border.svg';
 // import borderImage2 from './Vector.svg';
 import "@fortawesome/fontawesome-free/css/all.css";
 import video from "./video.mp4";
+// import Carousel from "../../components/carousel/carousel";
 
 const MainPage = () => {  
   return (
@@ -53,8 +56,10 @@ const MainPage = () => {
           img={partiesImg}
         />
         {/* <img className="imggg" src ={borderImage} alt="My Happy SVG"/> */}
+        <Carousel/>
         <Reservation />
         <Imagegrid />
+        <CarouselText/>
         <MapComponent />
       </div>
       {/* <video autoplay="autoplay" id="coverVideo" loop="loop" muted="muted" playsinline="playsinline" poster="https://static.spotapps.co/web/americanalasvegas--com/custom/video_poster.jpg" data-vscid="td6vs1676">
