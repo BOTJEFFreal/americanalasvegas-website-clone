@@ -1,14 +1,14 @@
-.food-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-  }
-  
-  .container {
+.left-container-dinner{
+  display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+}
+.container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     border-left: 1px solid #e4e4e4;
     padding-left: 4px;

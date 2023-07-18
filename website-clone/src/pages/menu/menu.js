@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import Header from "../../components/header/header";
 import Food from "./components/food/food";
@@ -15,10 +14,10 @@ function MenuPage() {
       <div className="food-menu">
         <h1>OUR MENU</h1>
         <div className="food-menu-nav">
-          <button onClick={()=>{setCardType(0)}}>Lunch</button>
-          <button onClick={()=>{setCardType(1)}}>Dinner</button>
-          <button onClick={()=>{setCardType(2)}}>DESSERT</button>
-          <button onClick={()=>{setCardType(3)}}>Sunday Brunch</button>
+          <button className={cardType === 0 && `red-color-button`} onClick={()=>{setCardType(0)}}>Lunch</button>
+          <button className={cardType === 1 && `red-color-button`} onClick={()=>{setCardType(1)}}>Dinner</button>
+          <button className={cardType === 2 && `red-color-button`} onClick={()=>{setCardType(2)}}>DESSERT</button>
+          <button className={cardType === 3 && `red-color-button`} onClick={()=>{setCardType(3)}}>Sunday Brunch</button>
         </div>
       </div>
       {cardType === 0 && <Food></Food>}

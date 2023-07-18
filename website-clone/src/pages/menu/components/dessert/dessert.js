@@ -1,5 +1,4 @@
-import './dessert.css'
-import menuItem from '../../../../components/menuItem/menuItem';
+import MenuItem from '../../../../components/menuItem/menuItem';
 
 function Dessert(){
     const items = [
@@ -15,8 +14,8 @@ function Dessert(){
           <h1>Menu</h1>
           <div className="food-items">
             {items.map((item) => {
-              return menuItem(item.type);
-            })}
+            return <MenuItem title = {item.title} price ={item.price} content= {item.description}/>;
+          })}
           </div>
         </div>
         </div>

@@ -72,7 +72,7 @@ const Carousel = () => {
           key={slide.id}
           className={`slide ${index === currentIndex ? "active" : ""}`}
         >
-          <img src={slide.imageUrl} alt={`Slide ${slide.id}`} />
+          {/* <img src={slide.imageUrl} alt={`Slide ${slide.id}`} /> */}
           <ImageContainer
             imageUrl={slides[index].imageUrl}
             heading={slides[index].heading}

@@ -1,5 +1,5 @@
 import './sundayBrunch.css'
-import menuItem from "../../../../components/menuItem/menuItem";
+import MenuItem from "../../../../components/menuItem/menuItem";
 function SundayBrunch(){
     const savoryItems=[
       { id: 1, title: "Market Oysters (6)", description: "Pomegranite Mignonette ~ Classic Cocktail Sauce" , price:"$23.00" },
@@ -27,21 +27,21 @@ function SundayBrunch(){
       <div className="sundayBruch-desc">
           Bottomless Mimosas, Bloody Mary’s, Grapefruit Palomas, or Red Wine Sangria $20
           </div>
-          <div className="sundayBruch-list">
+          <div className="food-list">
       <div className="container">
-        <h1>Appetizers</h1>
+        <h1>Savory</h1>
         <div className="food-items">
           {savoryItems.map((item) => {
-            return menuItem(item.description);
+            return <MenuItem title = {item.title} price ={item.price} content= {item.description}/>;
           })}
         </div>
       </div>
       <div className="container">
-        <h1>Entrees</h1>
+        <h1>Sweets</h1>
         <p>20% Gratuity will be added to parties 6 or more</p>
         <div className="food-items">
           {sweetItems.map((item) => {
-            return menuItem(item.description);
+            return <MenuItem title = {item.title} price ={item.price} content= {item.description}/>;
           })}
         </div>
       </div>

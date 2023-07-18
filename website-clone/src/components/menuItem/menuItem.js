@@ -1,21 +1,28 @@
 import "./menuItem.css";
  
-function menuItem(props) {
+function MenuItem(props) {
+  console.log(props.imageSrc);
   return (
     <>
-      <div class="food-item-holder">
+      <div className="food-item-holder">
         <div className="food">
-        <div class="food-item-title">
-          {props.title}
+          <div className="food-item-title">
+            {props.title}
+          </div>
+          <div className="food-price">{props.price}</div>
         </div>
-        <div class="food-price">{props.price}</div>
-        </div>
-        <div class="food-item-description">
+        <div className="food-item-description">
           {props.content}
         </div>
+        {props.imageSrc && (
+          <div className="food-item-img">
+            <img src={props.imageSrc} alt={props.title} />
+          </div>
+        )}
       </div>
     </>
   );
 }
 
-export default menuItem;
+
+export default MenuItem;

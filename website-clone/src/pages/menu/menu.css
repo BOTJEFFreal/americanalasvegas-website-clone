@@ -34,7 +34,6 @@
   justify-content: center;
   align-items: center;
   margin-top: 40px;
-  margin-bottom: 10px;
 }
 
 .food-menu-nav button {
@@ -53,12 +52,22 @@
   font-weight: 400;
   line-height: 22.857px;
   text-transform: uppercase;
+  align-self: stretch;
+
+
+  transition: all 0.3s ease-in-out;
 }
 
 .food-menu-nav button:focus {
   animation: button-color-change 0.5s 1;
   border: 2px solid #a31521;
   background: #a31521;
+}
+
+.red-color-button{
+  animation: button-color-change 0.5s 1;
+  border: 2px solid #a31521 !important;
+  background: #a31521 !important;
 }
 
 @keyframes button-color-change {
@@ -80,5 +89,9 @@
     margin: 0px;
     width: 100%;
     padding: 7px 30px;
+  }
+  .red-color-button{
+    border: 2px solid #a31521 !important;
+    background: #a31521 !important;
   }
 }
