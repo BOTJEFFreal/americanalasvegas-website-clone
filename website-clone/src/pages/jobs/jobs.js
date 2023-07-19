@@ -3,21 +3,46 @@ import HeaderSmall from "../../components/headerSmall/headerSmall";
 import HeaderTextContainer from "../../components/headerTextContainer/headerTextContainer";
 
 import "./jobs.css";
+import { useRef,useState } from "react";
 
 function JobsPage() {
+  const inputRef = useRef(null);
+  const filenameRef = useRef(null);
+  const isVisible = useRef(true);
+
+  const handleClick = () => {
+    isVisible.current = false;
+    inputRef.current.click();
+  };
+  const handleFileChange = (event) => {
+    const fileObj = event.target.files && event.target.files[0];
+    if (!fileObj) {
+      return;
+    }
+    event.target.value = null;
+    filenameRef.current = fileObj.name;
+    console.log(filenameRef.current);
+  };
+
+  const handleClickin =()=>{
+    isVisible.current = false;
+  }
   return (
     <>
       <HeaderSmall></HeaderSmall>
 
       <div className="Main-container">
-        <HeaderTextContainer heading="Careers" subheading ="
+        <HeaderTextContainer
+          heading="Careers"
+          subheading="
         We are hiring! Apply below to become a part of our awesome team and we'll get back to you
          ASAP!"
-         subheading2="Alternatively if you have questions you can call us at"
-         anchor="(702) 331-5565"/>
+          subheading2="Alternatively if you have questions you can call us at"
+          anchor="(702) 331-5565"
+        />
         <div className="form">
-          <InputTag placeholder="Name..."/>
-          <InputTag placeholder="Phone..."/>
+          <InputTag placeholder="Name..." />
+          <InputTag placeholder="Phone..." />
           <div className="checkbox-row">
             <input type="checkbox" className="checkbox-polices"></input>
             <label>
@@ -39,11 +64,11 @@ function JobsPage() {
               <label for="Bartender">Bartender</label>
             </div>
             <div>
-                <input
-                  id="Busser/Bus Person"
-                  type="checkbox"
-                  value="Busser/Bus Person"
-                ></input>
+              <input
+                id="Busser/Bus Person"
+                type="checkbox"
+                value="Busser/Bus Person"
+              ></input>
               <label for="Busser/Bus Person">Busser/Bus Person</label>
             </div>
             <div>
@@ -86,12 +111,28 @@ function JobsPage() {
           <div className="bottom">
             <div className="bottom-continer">
               <p>Resume:</p>
-              <button>Choose a File</button>
+              <button onClick={handleClick}>Choose a File</button>
+              <input
+                style={{ display: "none" }}
+                ref={inputRef}
+                type="file"
+                onChange={handleFileChange}
+              />
             </div>
-            <div className="button-message"></div>
+            <div className={`message ${isVisible ? "":"message-invisible"}`}>
+              <i></i>
+              <div className="file-name">{filenameRef.current}</div>
+              <button onClick={handleClickin}>X</button>
+            </div>
             <div className="bottom-continer">
-              <p>Resume:</p>
-              <button>Choose a File</button>
+              <p>Image:</p>
+              <button onClick={handleClick}>Choose a Image</button>
+              <input
+                style={{ display: "none" }}
+                ref={inputRef}
+                type="file"
+                onChange={handleFileChange}
+              />
             </div>
             <button className="submit">Submit</button>
           </div>

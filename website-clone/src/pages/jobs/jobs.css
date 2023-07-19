@@ -158,6 +158,11 @@ margin:0px 0px 16px 16px;
   padding: 10px;
 }
 
+.bottom-continer button:hover{
+  color: #fff;
+
+}
+
 .button-message{
   height: 22px;
 }
@@ -175,4 +180,9 @@ margin:0px 0px 16px 16px;
   font-weight: 700;
   line-height: 24px;
   margin: 16px 0px;
+}
+
+.message-invisible{
+  display: none !important;
+
 }

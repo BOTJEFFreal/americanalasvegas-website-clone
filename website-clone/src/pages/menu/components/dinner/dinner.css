@@ -1,9 +1,19 @@
+.set-list-width{
+  display: flex;
+}
+
 .left-container-dinner{
+  position: relative; /* Position the left-container-dinner relatively */
+
   display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
+    /* width: 50%; */
 
+}
+.restrict-width{
+  width: 50%;
 }
 .container {
     display: flex;
@@ -16,9 +26,11 @@
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     margin: 10px 20px;
     padding: 20px 30px 30px;
-    /* width: 27%; */
+    /* width: 50%; */
   
     /* background-color: aqua;  */
+    position: relative;
+
   }
   .container h1 {
     color: #000;
@@ -40,3 +52,57 @@
     line-height: 22.857px;
     margin: -5px 0px 0px 0px;
   }
+  .overlay {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 135px 0px 0px 30px;
+    background: rgba(255, 255, 255, 1); 
+    opacity: 0;
+  }
+
+  .red-vl{
+    height: 100%;
+    width: 1px;
+    background-color: #a31521;
+  }
+
+  .down-animtate{
+    animation-name: enterFromDown;
+    animation-duration: 0.6s;
+  }
+
+  .right-animtate{
+    animation-name: enterFromRight;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  
+
+  @keyframes enterFromDown {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes enterFromRight {
+    from {
+      opacity: 1;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(0);
+    }
+  }
+

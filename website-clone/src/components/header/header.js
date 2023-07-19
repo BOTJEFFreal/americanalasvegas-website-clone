@@ -3,7 +3,6 @@ import "./burger.css";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
-import MyClickableImage from "../imagetag";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faYelp } from "@fortawesome/free-brands-svg-icons";

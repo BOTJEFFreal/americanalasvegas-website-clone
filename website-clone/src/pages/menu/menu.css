@@ -3,6 +3,10 @@
   height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
+  background-size: 100% ;
+  /* object-fit: cover; */
+  
+
 }
 
 .main-content {
@@ -40,9 +44,9 @@
   border: 0.8px solid #002e48;
   background: #002e48;
   min-width: 160px;
-  padding: 10px 4% 10px 4%;
-  margin: 10px;
-  margin-right: 20px;
+  /* padding: 10px 4% 10px 4%; */
+  padding: 9px 40px;
+
 
   color: #fff;
   text-align: center;
@@ -53,9 +57,11 @@
   line-height: 22.857px;
   text-transform: uppercase;
   align-self: stretch;
-
-
   transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 10px;
+  
 }
 
 .food-menu-nav button:focus {

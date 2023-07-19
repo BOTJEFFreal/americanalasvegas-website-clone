@@ -8,7 +8,7 @@ function AboutUsCardComponent() {
   const {ref:myRef, inView :isVisible} = useInView();
   const [isVisibleCheck, setIsVisibleCheck] = useState(0);
 
-
+ 
 
   return (
     <>

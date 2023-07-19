@@ -1,6 +1,7 @@
 import './sundayBrunch.css'
 import MenuItem from "../../../../components/menuItem/menuItem";
-function SundayBrunch(){
+import { useState, useEffect } from 'react';
+function SundayBrunch(props){
     const savoryItems=[
       { id: 1, title: "Market Oysters (6)", description: "Pomegranite Mignonette ~ Classic Cocktail Sauce" , price:"$23.00" },
       { id: 2, title: "Baby Kale Salad", description: "Shaved Apples ~ Goat Cheese ~ White Balsamic. Add Chicken +$7 ~ Add Shrimp+ $9 ~ Smoked Salmon +$9" , price:"$14.00" },
@@ -22,13 +23,15 @@ function SundayBrunch(){
         { id: 5, title: "Berry Pancakes", description: "Orange- Maple Syrup ~ Chantilly Cream" , price:"$14.00" },
         { id: 5, title: "Pastry Basket for Two", description: "Cinnamon Rolls ~ Churros ~ Assorted Muffins" , price:"$11.00" },
       ];
+
     return(
       <>
       <div className="sundayBruch-desc">
           Bottomless Mimosas, Bloody Mary’s, Grapefruit Palomas, or Red Wine Sangria $20
           </div>
           <div className="food-list">
-      <div className="container">
+            <div className='set-list-width'>
+            <div className="container">
         <h1>Savory</h1>
         <div className="food-items">
           {savoryItems.map((item) => {
@@ -36,7 +39,7 @@ function SundayBrunch(){
           })}
         </div>
       </div>
-      <div className="container">
+      <div className={` container restrict-width ${props.rightAnimate === 1 ? "right-animtate":"is-visible"}`}>
         <h1>Sweets</h1>
         <p>20% Gratuity will be added to parties 6 or more</p>
         <div className="food-items">
@@ -45,6 +48,8 @@ function SundayBrunch(){
           })}
         </div>
       </div>
+            </div>
+      
       </div>
           </>
        
