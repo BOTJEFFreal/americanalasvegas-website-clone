@@ -1,7 +1,6 @@
 import "./menuItem.css";
 
 function MenuItem(props) {
-  console.log(props.imageSrc);
   return (
     <>
       <div className="food-item-holder">

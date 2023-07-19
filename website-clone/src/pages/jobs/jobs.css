@@ -182,7 +182,46 @@ margin:0px 0px 16px 16px;
   margin: 16px 0px;
 }
 
+.message{
+  display: flex;
+  align-items: center;
+}
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the icon horizontally and vertically */
+  margin-right: 10px; /* Add some margin if needed between the icon and the file name */
+}
+
+.custom-icon {
+  font-size: 12px;
+  width: 12px;
+  height: 12px;
+  color: #ea5329;
+  margin-right: 4px;
+}
+
+.file-name{
+  box-sizing: border-box;
+  width: 120px;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.close-button{
+  border: 1px solid #000;
+  border-radius: 50%;
+  color: #000;
+  cursor: pointer;
+  font-size: 13px;
+  height: 16px;
+  /* line-height: 12px; */
+  text-align: center;
+  width: 16px;
+}
 .message-invisible{
-  display: none !important;
+  opacity: 0 !important;
 
 }

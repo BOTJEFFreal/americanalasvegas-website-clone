@@ -1,36 +1,38 @@
 import InputTag from "../../components/inputTag/inputTag";
 import HeaderSmall from "../../components/headerSmall/headerSmall";
 import HeaderTextContainer from "../../components/headerTextContainer/headerTextContainer";
+import "@fortawesome/fontawesome-free/css/all.css"; // Font Awesome CSS
 
 import "./jobs.css";
-import { useRef,useState } from "react";
+import { useRef, useState } from "react";
 
 function JobsPage() {
   const inputRef = useRef(null);
-  const filenameRef = useRef(null);
-  const isVisible = useRef(true);
+  const [isVisible, setIsVisible] = useState(true);
+  const [filename, setFilename] = useState(true);
+
 
   const handleClick = () => {
-    isVisible.current = false;
     inputRef.current.click();
   };
   const handleFileChange = (event) => {
-    const fileObj = event.target.files && event.target.files[0];
-    if (!fileObj) {
-      return;
+    const file = event.target.files[0];
+    if (file) {
+      setFilename(file.name);
+    } else {
+      setFilename("");
     }
-    event.target.value = null;
-    filenameRef.current = fileObj.name;
-    console.log(filenameRef.current);
   };
 
-  const handleClickin =()=>{
-    isVisible.current = false;
-  }
+  const handleClickin = () => {
+    setIsVisible(false);
+  };
+
+
+  
   return (
     <>
       <HeaderSmall></HeaderSmall>
-
       <div className="Main-container">
         <HeaderTextContainer
           heading="Careers"
@@ -54,8 +56,8 @@ function JobsPage() {
             </label>
           </div>
 
-          <InputTag></InputTag>
-          <InputTag></InputTag>
+          <InputTag />
+          <InputTag />
 
           <div className="multiple-checklist">
             <p>Applying For:</p>
@@ -114,17 +116,16 @@ function JobsPage() {
               <button onClick={handleClick}>Choose a File</button>
               <input
                 style={{ display: "none" }}
-                ref={inputRef}
                 type="file"
                 onChange={handleFileChange}
               />
             </div>
-            <div className={`message ${isVisible ? "":"message-invisible"}`}>
-              <i></i>
-              <div className="file-name">{filenameRef.current}</div>
-              <button onClick={handleClickin}>X</button>
+            <div className={`message ${isVisible ? "" : "message-invisible"}`}>
+            <i className="fa fa-file custom-icon"></i>
+              <div className="file-name">{filename}</div>
+              <button className="close-button" onClick={handleClickin}>X</button>
             </div>
-            <div className="bottom-continer">
+            {/* <div className="bottom-continer">
               <p>Image:</p>
               <button onClick={handleClick}>Choose a Image</button>
               <input
@@ -133,7 +134,7 @@ function JobsPage() {
                 type="file"
                 onChange={handleFileChange}
               />
-            </div>
+            </div> */}
             <button className="submit">Submit</button>
           </div>
         </div>

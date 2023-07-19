@@ -1,32 +1,35 @@
 import React, { useState, useEffect } from "react";
-import ImageContainer from "./component/imageContainer";
 import "./carousel.css";
+
+import ImageContainer from "./component/imageContainer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
 
 const Carousel = () => {
   const slides = [
     {
       id: 1,
-      imageUrl: "https://picsum.photos/id/237/600/1900",
-      heading: "HOST YOUR NEXT PARTY WITH US",
-      buttonText: "Our Menu",
+      imageUrl: "images/carousel/slide-img1.jpg",
+      heading: "AMERICANA'S AUTHENTIC DISHES",
+      buttonText: "OUR MENU",
     },
     {
       id: 2,
-      imageUrl: "https://picsum.photos/id/238/600/1900",
-      heading: "HOST YOUR NEXT PARTY WITH US",
-      buttonText: "Our Menu",
+      imageUrl: "images/carousel/slide-img2.jpg",
+      heading: "SERVED TO PERFECTION",
+      buttonText: "CATERING",
     },
     {
       id: 3,
-      imageUrl: "https://picsum.photos/id/239/600/1900",
-      heading: "HOST YOUR NEXT PARTY WITH US",
-      buttonText: "Our Menu",
+      imageUrl: "images/carousel/slide-img3.jpg",
+      heading: "AUTHENTIC TASTE IN EVERY DISH",
+      buttonText: "OUR MENU",
     },
     {
       id: 4,
-      imageUrl: "https://picsum.photos/id/237/600/1900",
+      imageUrl: "images/carousel/slide-img4.jpg",
       heading: "HOST YOUR NEXT PARTY WITH US",
-      buttonText: "Our Menu",
+      buttonText: "PARTIES",
     },
   ];
 
@@ -53,20 +56,8 @@ const Carousel = () => {
     setCurrentIndex(index);
   };
 
-  const PlayIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path d="M8 5v14l11-7z" />
-    </svg>
-  );
-
-  const PauseIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
-    </svg>
-  );
-
   return (
-    <div className="carousel-img">
+    <div className="carousel">
       {slides.map((slide, index) => (
         <div
           key={slide.id}
@@ -80,22 +71,28 @@ const Carousel = () => {
           />
         </div>
       ))}
-      <div className="controllers-img">
-        <div className="indicators-img">
+      <div className="controllers">
+        <div className="indicators">
           {slides.map((slide, index) => (
             <span
               key={slide.id}
-              className={`indicator-img ${
-                index === currentIndex ? "active" : ""
-              }`}
+              className={`indicator ${index === currentIndex ? "active" : ""}`}
               onClick={() => handleIndicatorClick(index)}
             ></span>
           ))}
         </div>
-        <div className="controls-img">
-          <button className="control-btn-img" onClick={handlePauseClick}>
-            {isPaused ? <PlayIcon /> : <PauseIcon />}
-            {/* rgba(255, 255, 255, 0.8) */}
+        <div className="controls">
+          <button className="control-btn" onClick={handlePauseClick}>
+            {isPaused ? (
+          
+                <FontAwesomeIcon className="play-pause-button" icon={faPlay} style={{ width: '40px', height: '40px' }}
+                />
+             
+            ) : (
+                <FontAwesomeIcon className="play-pause-button" icon={faPause} style={{ width: '40px', height: '40px' }}
+                />
+              
+            )}
           </button>
         </div>
       </div>

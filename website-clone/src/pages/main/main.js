@@ -22,7 +22,7 @@ import video from "./video.mp4";
 const MainPage = () => {  
   return (
     <div className="main-page">
-      <Header></Header>
+      <Header/>
       <div className="main-content">
         <div className="video-player">
           <video autoplay loop muted>

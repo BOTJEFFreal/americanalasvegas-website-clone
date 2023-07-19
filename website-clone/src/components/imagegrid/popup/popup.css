@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap'); 
+
+.fancybox-wrap { 
+    padding:  0; 
+    margin:  0; 
+    border:  0; 
+    outline:  none; 
+    vertical-align:  top;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    z-index: 999;
+} 
+
+.fancybox-opened { 
+    z-index: 999;
+} 
+
+
+.fancybox-skin { 
+    padding:  0; 
+    margin:  0; 
+    border:  0; 
+    outline:  none; 
+    vertical-align:  top;
+    position: relative; 
+    background: #f9f9f9; 
+    color: #444; 
+    text-shadow: none; 
+    -webkit-border-radius: 4px; 
+    -moz-border-radius: 4px; 
+    border-radius: 4px;
+} 
+
+.fancybox-opened .fancybox-skin  { 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+} 
+
+.fancybox-outer { 
+    padding:  0; 
+    margin:  0; 
+    border:  0; 
+    outline:  none; 
+    vertical-align:  top;
+    position: relative;
+} 
+
+a { 
+    background-color:      transparent;
+    color:  #fff;
+    text-decoration:    none; 
+    background:    0 0;
+    cursor:   pointer;
+} 
+
+.fancybox-close { 
+    background-image:  url('https://static.spotapps.co/web/americanalasvegas--com/lib/fancybox/source/fancybox_sprite.png');
+    position: absolute; 
+    top: -18px; 
+    right: -18px; 
+    width: 36px; 
+    height: 36px; 
+    cursor: pointer; 
+    z-index: 8040;
+} 
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5){ 
+  .fancybox-close { 
+    background-image: url('https://static.spotapps.co/web/americanalasvegas--com/lib/fancybox/source/fancybox_sprite@2x.png'); 
+    background-size: 44px 152px;
+  } 
+}     
+
+a:active,a:hover { 
+    outline: 0;
+} 
+
+a:hover { 
+    color:  #0b5f90; 
+    text-decoration:  underline;
+} 
+
+.fancybox-inner { 
+    padding:   0; 
+    margin:   0; 
+    border:   0; 
+    outline:   none; 
+    vertical-align:   top;
+    position:  relative;
+    overflow: hidden;
+} 
+
+.fancybox-nav { 
+    padding:  0; 
+    margin:  0; 
+    border:  0; 
+    outline:  none; 
+    vertical-align:  top;
+    position: absolute; 
+    top: 0; 
+    width: 40%; 
+    height: 100%; 
+    cursor: pointer; 
+    text-decoration: none; 
+    background: transparent url('https://static.spotapps.co/web/americanalasvegas--com/lib/fancybox/source/blank.gif'); 
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    z-index: 999;
+} 
+
+.fancybox-prev { 
+    left: 0;
+} 
+
+.fancybox-next { 
+    right: 0;
+} 
+
+img { 
+    border:   0;
+    vertical-align:  middle;
+    max-width: 100%; 
+    height: auto; 
+    box-sizing: border-box;
+} 
+
+.fancybox-image { 
+    display:  block; 
+    padding:   0; 
+    margin:   0; 
+    border:   0; 
+    outline:   none; 
+    vertical-align:   top;
+    width:  100%; 
+    height:  100%;
+    max-width: 100%; 
+    max-height: 100%;
+} 
+
+.fancybox-nav span  { 
+    padding: 0; 
+    margin: 0; 
+    border: 0; 
+    outline: none; 
+    vertical-align: top;
+} 
+
+.fancybox-prev span  { 
+    background-image: url('https://static.spotapps.co/web/americanalasvegas--com/lib/fancybox/source/fancybox_sprite.png');
+} 
+
+.fancybox-nav span  { 
+    position: absolute; 
+    top: 50%; 
+    width: 36px; 
+    height: 34px; 
+    margin-top: -18px; 
+    cursor: pointer; 
+    z-index: 8040; 
+    visibility: hidden;
+} 
+
+.fancybox-prev span  { 
+    left: 10px; 
+    background-position: 0 -36px;
+} 
+
+    
+
+.popup{
+}
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#style-WJY2W.style-WJY2W { 
+    display: flex; 
+   width: 830px;  
+    height: 830px;  
+    position: fixed;  
+    top: 10%;  
+    left: 22%;  
+    opacity: 1;  
+    overflow: visible; 
+
+}  
+#style-1v1kg.style-1v1kg {  
+   padding: 15px;  
+    width: auto;  
+    height: auto;  
+}  
+#style-6Is5y.style-6Is5y {  
+   overflow: visible;  
+    width: 800px;  
+    height: 800px;  
+}  
+
+
+/* @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5){ 
+    .fancybox-prev span  { 
+      background-image: url('https://static.spotapps.co/web/americanalasvegas--com/lib/fancybox/source/fancybox_sprite@2x.png'); 
+      background-size: 44px 152px;
+    } 
+  }     
+  
+  .fancybox-nav:hover span  { 
+      visibility: visible;
+  } 
+  
+  .fancybox-next span  { 
+      background-image:  url('https://static.spotapps.co/web/americanalasvegas--com/lib/fancybox/source/fancybox_sprite.png');
+      right: 10px; 
+      background-position: 0 -72px;
+  } 
+  
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5){ 
+    .fancybox-next span  { 
+      background-image: url('https://static.spotapps.co/web/americanalasvegas--com/lib/fancybox/source/fancybox_sprite@2x.png'); 
+      background-size: 44px 152px;
+    } 
+  }  */

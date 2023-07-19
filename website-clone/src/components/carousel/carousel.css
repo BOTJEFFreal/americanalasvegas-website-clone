@@ -1,8 +1,8 @@
-.carousel-img {
+.carousel {
   display: flex;
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 650px;
   overflow: hidden;
 }
 
@@ -26,14 +26,14 @@
   object-fit: cover;
 }
 
-.controllers-img{
+.controllers{
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.indicators-img {
+.indicators {
   margin-top: 15px;
   position: absolute;
   bottom: 10px;
@@ -42,7 +42,7 @@
   display: flex;
 }
 
-.indicator-img {
+.indicator {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -52,41 +52,40 @@
   margin: 15px 0px 0px 15px;
 }
 
-.indicator-img.active {
+.indicator.active {
   background-color: #fff;
 }
 
-.controls-img {
+.controls {
   position: absolute;
   top: 90%;
   left: 95%;
   transform: translate(-50%, -50%);
-  /* opacity: 0; */
+  opacity: 1;
+  width: 40px;
+  height: 40px;
 }
 
 
+.controls :hover{
+    opacity: 1;
+  }
 
 
-
-.control-btn-img {
+.control-btn {
   background-color: transparent;
   border: none;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
   margin: 0 5px;
-  /* transform: translate(0%, 0%); */
-
+  width: 40px;
+  height: 40px;
 }
 
-.control-btn-img svg {
-  width: 30px;
-  height: 40px; 
-  fill: rgba(255, 255, 255, 0.8);
-  opacity: 0;
-
+.play-pause-button{
+  color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
 }
-
-.carousel-img:hover .control-btn-img svg {
-    opacity: 1 !important;
-  }

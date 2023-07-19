@@ -1,8 +1,10 @@
 import './imageContainer.css'
-
+ 
 function ImageContainer(props){
-    <div className='imageContainer' 
-    style={{backgroundImage:`url(${props.imageUrl})`}}>
+    return(
+        <div className='imageContainer' 
+    style={{backgroundImage:`url(${props.imageUrl})`}}
+    >
         <div className='imageContainer-heading'>
             {props.heading}
         </div>
@@ -10,6 +12,8 @@ function ImageContainer(props){
             {props.buttonText}
         </button>
     </div>
+    );
+    
 }
 
 export default ImageContainer;
