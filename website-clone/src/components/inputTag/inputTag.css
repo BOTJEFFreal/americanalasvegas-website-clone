@@ -13,9 +13,17 @@ background: #FFF;
 } 
 
 input:focus {
-  border: 2px solid red;
+  border: 2px solid #000;
   border-radius: 4px;
-  box-shadow: 0 0 2px red;
+  box-shadow: 0 0 2px #000;
+  outline-offset: 0px;
+  outline: none;
+}
+
+.empty-input{
+  border: 2px solid #c04a39;
+  border-radius: 4px;
+  box-shadow: 0 0 2px #c04a39;
   outline-offset: 0px;
   outline: none;
 }
@@ -30,3 +38,5 @@ input:focus {
   line-height: normal;
   opacity: 1;
 }
+
+

@@ -10,10 +10,14 @@ function JobsPage() {
       <HeaderSmall></HeaderSmall>
 
       <div className="Main-container">
-        <HeaderTextContainer></HeaderTextContainer>
+        <HeaderTextContainer heading="Careers" subheading ="
+        We are hiring! Apply below to become a part of our awesome team and we'll get back to you
+         ASAP!"
+         subheading2="Alternatively if you have questions you can call us at"
+         anchor="(702) 331-5565"/>
         <div className="form">
-          <InputTag></InputTag>
-          <InputTag></InputTag>
+          <InputTag placeholder="Name..."/>
+          <InputTag placeholder="Phone..."/>
           <div className="checkbox-row">
             <input type="checkbox" className="checkbox-polices"></input>
             <label>

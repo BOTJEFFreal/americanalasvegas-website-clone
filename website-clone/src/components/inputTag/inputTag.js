@@ -1,5 +1,6 @@
 import "./inputTag.css";
 function InputTag(props) {
+  
   const handleChange = (event) => {
     if(props.type ==="moneyType"){
         const { value } = event.target;
@@ -13,7 +14,7 @@ function InputTag(props) {
   };
   return (
     <input
-      className="text-input"
+      className="text-input is-empty"
       type="text"
       placeholder={props.type ==="moneyType" ? "$45"
         :props.placeholder}

@@ -20,10 +20,10 @@ function MenuPage() {
           <button className={cardType === 3 && `red-color-button`} onClick={()=>{setCardType(3)}}>Sunday Brunch</button>
         </div>
       </div>
-      {cardType === 0 && <Food></Food>}
-      {cardType === 1 && <Dinner></Dinner>}
-      {cardType === 2 && <Dessert></Dessert>} 
-      {cardType === 3 && <SundayBrunch></SundayBrunch>}
+      {cardType === 0 && <Food/>}
+      {cardType === 1 && <Dinner/>}
+      {cardType === 2 && <Dessert/>} 
+      {cardType === 3 && <SundayBrunch/>}
         
     </div>
     </div>
