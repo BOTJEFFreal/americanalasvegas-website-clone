@@ -1,7 +1,7 @@
 import HeaderSmall from "../../components/headerSmall/headerSmall";
 import InputTag from "../../components/inputTag/inputTag";
-import DropdownComponent from "../../components/dropdown/dropdown"
-import DatePickerComponent from "../../components/calender/calender"
+import DropdownComponent from "../../components/dropdown/dropdown";
+import DatePickerComponent from "../../components/calender/calender";
 import HeaderTextContainer from "../../components/headerTextContainer/headerTextContainer";
 import "./party.css";
 function PartyPages() {
@@ -9,10 +9,13 @@ function PartyPages() {
     <>
       <HeaderSmall></HeaderSmall>
       <div className="Main-container">
-        <HeaderTextContainer></HeaderTextContainer>
+        <HeaderTextContainer
+          heading="Group Reservations and Private Parties"
+          subheading="Whether it's a bday party, baby shower, office function or any other special event, please fill out the form below and we'll do our best to accommodate your desired date and any requests you may have to make your party/celebration memorable."
+        />
         <div className="form">
-          <InputTag></InputTag>
-          <InputTag></InputTag>
+        <InputTag placeholder="Name..."/>
+          <InputTag placeholder="Phone..."/>
           <div className="checkbox-row">
             <input type="checkbox" className="checkbox-polices"></input>
             <label>
@@ -24,12 +27,12 @@ function PartyPages() {
             </label>
           </div>
 
-          <InputTag></InputTag>
+          <InputTag placeholder="Email..."/>
 
           <div className="dropbox">
-                <DropdownComponent></DropdownComponent>
-                <DatePickerComponent></DatePickerComponent>
-                <DropdownComponent></DropdownComponent>
+            <DropdownComponent></DropdownComponent>
+            <DatePickerComponent></DatePickerComponent>
+            <DropdownComponent></DropdownComponent>
           </div>
           <DropdownComponent></DropdownComponent>
           <DropdownComponent></DropdownComponent>
@@ -37,7 +40,9 @@ function PartyPages() {
           <div className="bottom">
             <div className="bottom-continer">
               <p>Resume:</p>
-              <div className="money-input"><InputTag></InputTag></div>
+              <div className="money-input">
+                <InputTag></InputTag>
+              </div>
             </div>
             <textarea placeholder="Description / Requests (optional)..."></textarea>
 
