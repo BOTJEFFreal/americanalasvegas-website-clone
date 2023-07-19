@@ -37,9 +37,9 @@ function DrinksPage() {
             </button>
           </div>
         </div>
-        {cardType === 0 && <Coffee></Coffee>}
-        {cardType === 1 && <Wine></Wine>}
-        {cardType === 2 && <Liqueurs></Liqueurs>}
+        {cardType === 0 && <Coffee/>}
+        {cardType === 1 && <Wine/>}
+        {cardType === 2 && <Liqueurs/>}
       </div>
     </div>
   );

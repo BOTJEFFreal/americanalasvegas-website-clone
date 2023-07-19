@@ -10,7 +10,9 @@ function CateringPage() {
       <HeaderSmall></HeaderSmall>
 
       <div className="main-container">
-        <HeaderTextContainer></HeaderTextContainer>
+        <HeaderTextContainer
+        heading ="Catering"
+        subheading="Please fill out the form below and we'll do our best to accommodate your desired date and any requests you may have to make your party/celebration memorable."/>
         <div className="form">
           <InputTag placeholder="Name..."></InputTag>
           <InputTag placeholder="Phone..."></InputTag>
