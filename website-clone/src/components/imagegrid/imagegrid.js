@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./imagegrid.css";
-import PopUp from './popup/popup';
+import PopUp from './popup/popup'; 
 
 
 function Imagegrid() {
