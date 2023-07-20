@@ -30,8 +30,12 @@ function Imagegrid() {
   return (
     <>
      <div className={"grid" + duringPopUp}>
+     <div className="image-overlay-top"></div>
+
       {divTags}
       {popUp && <PopUp setPopUp={setPopUp} image={`images/imagegrid/full${clickedImageIndex + 1}.jpg`}/>}
+      <div className="image-overlay-bottom"></div>
+
     </div>
     </>
    

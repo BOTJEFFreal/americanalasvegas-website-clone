@@ -58,6 +58,8 @@ const Carousel = () => {
 
   return (
     <div className="carousel">
+      <div className="image-overlay-top"></div>
+
       {slides.map((slide, index) => (
         <div
           key={slide.id}
@@ -96,6 +98,8 @@ const Carousel = () => {
           </button>
         </div>
       </div>
+      <div className="image-overlay-bottom"></div>
+
     </div>
   );
 };

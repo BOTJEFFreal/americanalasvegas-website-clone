@@ -11,7 +11,9 @@ function AboutUsCardComponent() {
  
 
   return (
-    <>
+    <div className="parent">
+    <div className="image-overlay-top"></div>
+
     <div className="about-us">
       <div className="about-us-left">
         <img className={`${isVisible ? "animate1" : ""}`} src={aboutUsImage} alt="Italian Trulli"></img>
@@ -34,9 +36,9 @@ function AboutUsCardComponent() {
         </div>
       </div>
     </div>
-    <div ref={myRef} className="check-animation"></div>
+    <div ref={myRef} className="check-animation image-bottom"></div>
 
-     </>
+     </div>
     
   );
 }

@@ -1,5 +1,6 @@
 .reservation-section {
     display: block;
+    position: relative;
     width: 100%;
     /* padding: 98px 365px 182px 365px; */
     justify-content: center;

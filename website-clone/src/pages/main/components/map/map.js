@@ -4,6 +4,8 @@ import OpenStreetMap from '../../../../components/map/openStreetMap';
 function MapComponent(){
     return(
         <div className="map">
+        <div className="image-overlay-top"></div>
+
       <div className="map-left">
         <div className="map-content">
           <div className="map-heading">
@@ -29,6 +31,8 @@ function MapComponent(){
         <OpenStreetMap/>
 
         </div>
+        <div className="image-overlay-bottom"></div>
+
       </div>
     )
 }

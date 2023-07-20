@@ -26,6 +26,8 @@ function ReservationPage(){
             type="text/javascript"
           ></script>
         </div>
+        <div className="image-bottom"></div>
+
       </div>
     )
 }
