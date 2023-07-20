@@ -40,3 +40,12 @@
     align-items: center;
     justify-content: center;
   }
+
+  @media (max-width:766px) {
+    .reservation-heading h1{
+      font-size: 36px;
+    }
+    .reservation-heading p{
+      font-size: 15px;
+    }
+  }

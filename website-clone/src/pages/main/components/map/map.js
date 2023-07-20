@@ -1,4 +1,5 @@
 import './map.css'
+import OpenStreetMap from '../../../../components/map/openStreetMap';
 
 function MapComponent(){
     return(
@@ -25,7 +26,7 @@ function MapComponent(){
 
       </div>
         <div className="map-right">
-        <img src="./about-us.png" alt="Italian Trulli"></img>
+        <OpenStreetMap/>
 
         </div>
       </div>

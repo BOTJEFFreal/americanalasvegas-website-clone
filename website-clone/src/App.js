@@ -12,11 +12,12 @@ import CateringPage from './pages/catering/catering';
 import ReservationPage from  './pages/reservation/reservation';
 import CarouselCard from './components/carouselCard/carouselCard';
 import Header from './components/header/header'
+import OpenStreetMap from './components/map/openStreetMap';
 
 function App() {
   return (
     <>
-    <JobsPage/>
+    <MainPage/>
     </>
   );
 }

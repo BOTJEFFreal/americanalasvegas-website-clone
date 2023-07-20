@@ -21,10 +21,10 @@ import video from "./video.mp4";
 
 const MainPage = () => {  
   return (
-    <div className="main-page">
+    <div className="main-page ">
       <Header/>
-      <div className="main-content">
-        <div className="video-player">
+      <div className="main-content ">
+        <div className="video-player bg-color">
           <video autoplay loop muted>
             <source src={video}></source>
             Your browser does not support the video tag.

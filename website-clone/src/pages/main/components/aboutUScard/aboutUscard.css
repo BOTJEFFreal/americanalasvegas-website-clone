@@ -142,5 +142,39 @@
     }
   }
 
-    
+  @media (max-width:766px) {
+
+    .about-us {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .about-us-heading p {
+      font-size: 36px;
+    }
+
+    .about-us-right{
+      width: 100%;
+      padding: 20px 20px 20px 20px;
+    }
+    .about-us-left {
+      width: 100%;
+      /* padding: 70px 4%; */
+      height: 300px;
+    }
+    .about-us-content {
+      font: 400 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+      -webkit-text-size-adjust: 100%;
+      line-height: 1.42857143;
+      font-family: 'Montserrat', sans-serif;
+      color: #000;
+      box-sizing: border-box;
+      margin: 0 0 15px 0;
+      font-size: 1.1em;
+      text-align: center;
+    }
+   
+  
+  }
  

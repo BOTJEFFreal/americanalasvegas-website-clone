@@ -13,7 +13,7 @@ function ReservationPage(){
         <div className="reservation-content">
           <iframe
             src="https://www.opentable.com/widget/reservation/canvas?rid=269260&amp;type=standard&amp;theme=wide&amp;overlay=false&amp;domain=com&amp;lang=en&amp;r3uid=OktkmuQSW--rwg--&amp;newtab=false&amp;disablega=false&amp;color=1"
-            width="840"
+            width="700"
             height="350"
             frameborder="0"
             name="opentable-make-reservation-widget"

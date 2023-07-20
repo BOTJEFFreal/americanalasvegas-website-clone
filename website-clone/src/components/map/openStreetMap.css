@@ -1,0 +1,9 @@
+.leaflet-control-attribution{
+    display: none;
+} 
+
+.leaflet-control{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

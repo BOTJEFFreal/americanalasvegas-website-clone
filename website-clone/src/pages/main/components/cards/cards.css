@@ -194,4 +194,32 @@
   }
 }
 
+
+@media (max-width:766px) {
+  .cards{
+    padding: 60px 0px;
+  }
+  .catering, .catering-rev{
+    flex-direction: column-reverse;
+
+  }
+  .catering-us-left{
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+
+  }
+  .catering-us-right {
+    width: 100%;
+
+  }
+  .catering-us-heading p {
+    font-size: 36px;
+  }
+  .catering-us-subheading{
+    font-size: 21px;
+  }
+  .catering-us-content{
+    font-size: 15px;
+  } 
+}
   
