@@ -28,8 +28,6 @@ const OpenStreetMap = () => {
       L.marker([36.129074, -115.165291], { icon: blueIcon }).addTo(map)
         .openPopup();
 
-      L.control.zoom({ position: 'bottomright' }).addTo(map);
-
     }
 
     // Call the initMap function after the component has mounted

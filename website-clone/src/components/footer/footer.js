@@ -2,7 +2,7 @@ import './footer.css'
 
 function Footer(){
     return(
-        <>
+        <> 
         <div className="footer">
         <div className="location">
           <div class="hours-title">
