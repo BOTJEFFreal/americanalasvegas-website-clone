@@ -14,21 +14,24 @@ function DrinksPage() {
         <div className="drink-menu">
           <h1 className="drink-heading">OUR DRINKS</h1>
           <div className="drink-menu-nav">
-            <button className={cardType === 0 && `red-color-button`}
+            <button
+              className={cardType === 0 && `red-color-button`}
               onClick={() => {
                 setCardType(0);
               }}
             >
               COFFEE & TEA
             </button>
-            <button className={cardType === 1 && `red-color-button`}
+            <button
+              className={cardType === 1 && `red-color-button`}
               onClick={() => {
                 setCardType(1);
               }}
             >
               WINE
             </button>
-            <button className={cardType === 2 && `red-color-button`}
+            <button
+              className={cardType === 2 && `red-color-button`}
               onClick={() => {
                 setCardType(2);
               }}
@@ -37,9 +40,9 @@ function DrinksPage() {
             </button>
           </div>
         </div>
-        {cardType === 0 && <Coffee/>}
-        {cardType === 1 && <Wine/>}
-        {cardType === 2 && <Liqueurs/>}
+        {cardType === 0 && <Coffee />}
+        {cardType === 1 && <Wine />}
+        {cardType === 2 && <Liqueurs />}
       </div>
     </div>
   );

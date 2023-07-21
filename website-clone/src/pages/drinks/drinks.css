@@ -7,8 +7,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  /* right: 0;
+  bottom: 0; */
 }
 
 .main-content {
@@ -79,10 +79,10 @@
 
 
 @media (max-width: 766px) {
-  .food-menu-nav {
+  .drink-menu-nav {
     flex-direction: column;
   }
-  .food-menu-nav button {
+  .drink-menu-nav button {
     margin: 0px;
     width: 100%;
     padding: 7px 30px;

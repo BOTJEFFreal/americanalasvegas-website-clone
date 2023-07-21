@@ -1,8 +1,8 @@
-.carousel {
+.carousel-text {
   display: block;
 }
 
-.title {
+.title-text {
   color: #000;
   text-align: center;
   font-family: DM Serif Display;
@@ -12,7 +12,7 @@
   line-height: 4.62rem; /* 110% */
   text-transform: uppercase;
 }
-.carousel-cards {
+.carousel-cards-text {
   display: flex;
   height: 360px;
   width: 100%;
@@ -20,7 +20,7 @@
   /* overflow: hidden; */
 }
 
-.slide {
+.slide-text {
   position: absolute;
   top: 0;
   left: 0;
@@ -30,7 +30,7 @@
   transition: opacity 0.5s ease;
 }
 
-.slide.active {
+.slide-text.active-text {
   opacity: 1;
 }
 
@@ -40,7 +40,7 @@
   object-fit: cover; 
 } */
 
-.controllers {
+.controllers-text {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -49,13 +49,13 @@
   align-items: center;
 }
 
-.indicators {
+.indicators-text {
   margin-top: 15px;
   transform: translateX(0%) translateY(0%);
   display: flex;
 }
 
-.indicator {
+.indicator-text {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -65,18 +65,18 @@
   margin: 15px 0px 0px 15px;
 }
 
-.indicator.active {
+.indicator-text.active-text {
   background-color: #a31521;
 }
 
-.controls {
+.controls-text {
   display: flex;
   align-items: center;
   margin-top: 20px;
   transform: translateX(0%) translateY(0%);
 }
 
-.control-btn {
+.control-btn-text {
   background-color: transparent;
   display: flex;
   border: none;
@@ -86,17 +86,17 @@
   margin: 0 5px;
 }
 
-.controllers {
+.controllers-text {
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
 
-.indicators {
+.indicators-text {
   display: flex;
   align-items: center;
 }
-*/ .indicator {
+*/ .indicator-text {
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -105,11 +105,11 @@
   cursor: pointer;
 }
 
-.indicator.active {
+.indicator-text.active-text {
   background-color: #a31521;
 }
 
-.control-btn svg {
+.control-btn-text svg {
   width: 20px;
   height: 20px;
   fill: #a31521;

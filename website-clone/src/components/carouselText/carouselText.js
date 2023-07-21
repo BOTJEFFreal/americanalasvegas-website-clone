@@ -71,13 +71,13 @@ const CarouselText = () => {
   };
 
   return (
-    <div className="carousel">
-      <div className="title">Review</div>
-      <div className="carousel-cards">
+    <div className="carousel-text">
+      <div className="title-text">Review</div>
+      <div className="carousel-cards-text">
         {cards.map((slide, index) => (
           <div
             key={slide.id}
-            className={`slide ${index === currentIndex ? "active" : ""}`}
+            className={`slide-text ${index === currentIndex ? "active-text" : ""}`}
           >
             <CarouselCard
               name={cards[index].name}
@@ -87,22 +87,22 @@ const CarouselText = () => {
           </div>
         ))}
       </div>
-      <div className="controllers">
-        <div className="indicators">
+      <div className="controllers-text">
+        <div className="indicators-text">
           {cards.map((slide, index) => (
             <span
               key={slide.id}
-              className={`indicator ${index === currentIndex ? "active" : ""}`}
+              className={`indicator-text ${index === currentIndex ? "active-text" : ""}`}
               onClick={() => handleIndicatorClick(index)}
             ></span>
           ))}
         </div>
-        <div className="controls">
-          <button className="control-btn" onClick={handlePlayClick}>
+        <div className="controls-text">
+          <button className="control-btn-text" onClick={handlePlayClick}>
             Play
           </button>
 
-          <button className="control-btn" onClick={handlePauseClick}>
+          <button className="control-btn-text" onClick={handlePauseClick}>
             Pause
           </button>
         </div>
