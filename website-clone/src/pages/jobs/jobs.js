@@ -8,37 +8,34 @@ import { useRef, useState } from "react";
 
 function JobsPage() {
   const inputRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
+  const [isImgVisible, setIsImgVisible] = useState(false);
   const [filename, setFilename] = useState(true);
   const [selectedImage, setSelectedImage] = useState(null);
-
+  const imgInputRef = useRef(null);
+  const fileInputRef = useRef(null);
 
   const handleClick = () => {
-    inputRef.current.click();
+    fileInputRef.current.click();
   };
   const handleFileChange = (event) => {
-    const file = event.target.files[0];
-    if (file) {
-      setFilename(file.name);
-    } else {
-      setFilename("");
-    }
+    const selectedFile = event.target.files[0];
+    setFilename(selectedFile.name);
+    setIsVisible(true)
   };
 
   const handleClickin = () => {
     setIsVisible(false);
   };
 
-  const fileInputRef = useRef(null);
-
   const handleButtonClick = () => {
-    fileInputRef.current.click();
+    imgInputRef.current.click();
   };
 
   const handleImageChange = (event) => {
-    // Handle the selected file here, e.g., read the file, upload it, etc.
-    const selectedFile = event.target.files[0];
-    setSelectedImage(URL.createObjectURL(selectedFile));
+    const selectedImage = event.target.files[0];
+    setSelectedImage(URL.createObjectURL(selectedImage));
+    setIsImgVisible(true);
   };
 
   return (
@@ -126,6 +123,7 @@ function JobsPage() {
               <p>Resume:</p>
               <button onClick={handleClick}>Choose a File</button>
               <input
+                ref={fileInputRef}
                 style={{ display: "none" }}
                 type="file"
                 onChange={handleFileChange}
@@ -135,7 +133,7 @@ function JobsPage() {
               <i className="fa fa-file custom-icon"></i>
               <div className="file-name">{filename}</div>
               <button className="close-button" onClick={handleClickin}>
-                X
+                <span>X</span>
               </button>
             </div>
             <div className="bottom-continer">
@@ -143,13 +141,13 @@ function JobsPage() {
               <button onClick={handleButtonClick}>Choose a Image</button>
               <input
                 type="file"
-                ref={fileInputRef}
+                ref={imgInputRef}
                 style={{ display: "none" }}
                 accept="image/*"
                 onChange={handleImageChange}
               />
             </div>
-            <div className="image-picker">
+            <div className={`image-picker ${isImgVisible ? "" : "message-invisible"}`}>
               <p>Photo Preview:</p>
               <img src={selectedImage} alt="Selected" />
 
