@@ -10,6 +10,7 @@ function JobsPage() {
   const inputRef = useRef(null);
   const [isVisible, setIsVisible] = useState(true);
   const [filename, setFilename] = useState(true);
+  const [selectedImage, setSelectedImage] = useState(null);
 
 
   const handleClick = () => {
@@ -28,8 +29,18 @@ function JobsPage() {
     setIsVisible(false);
   };
 
+  const fileInputRef = useRef(null);
 
-  
+  const handleButtonClick = () => {
+    fileInputRef.current.click();
+  };
+
+  const handleImageChange = (event) => {
+    // Handle the selected file here, e.g., read the file, upload it, etc.
+    const selectedFile = event.target.files[0];
+    setSelectedImage(URL.createObjectURL(selectedFile));
+  };
+
   return (
     <>
       <HeaderSmall></HeaderSmall>
@@ -121,20 +132,29 @@ function JobsPage() {
               />
             </div>
             <div className={`message ${isVisible ? "" : "message-invisible"}`}>
-            <i className="fa fa-file custom-icon"></i>
+              <i className="fa fa-file custom-icon"></i>
               <div className="file-name">{filename}</div>
-              <button className="close-button" onClick={handleClickin}>X</button>
+              <button className="close-button" onClick={handleClickin}>
+                X
+              </button>
             </div>
-            {/* <div className="bottom-continer">
+            <div className="bottom-continer">
               <p>Image:</p>
-              <button onClick={handleClick}>Choose a Image</button>
+              <button onClick={handleButtonClick}>Choose a Image</button>
               <input
-                style={{ display: "none" }}
-                ref={inputRef}
                 type="file"
-                onChange={handleFileChange}
+                ref={fileInputRef}
+                style={{ display: "none" }}
+                accept="image/*"
+                onChange={handleImageChange}
               />
-            </div> */}
+            </div>
+            <div className="image-picker">
+              <p>Photo Preview:</p>
+              <img src={selectedImage} alt="Selected" />
+
+
+            </div>
             <button className="submit">Submit</button>
           </div>
         </div>

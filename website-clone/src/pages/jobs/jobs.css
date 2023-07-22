@@ -225,3 +225,19 @@ margin:0px 0px 16px 16px;
   opacity: 0 !important;
 
 }
+
+.image-picker{
+  padding: 0px 15px;
+  width: 52%;
+}
+
+.image-picker p{
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  margin-top: 0;
+  color: #4f5454;
+  font-size: 1.1em;
+}

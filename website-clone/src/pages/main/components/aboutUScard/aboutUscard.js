@@ -7,7 +7,6 @@ import bannerImage from "./bannerImage.png";
 function AboutUsCardComponent() {
   const { ref: myRef, inView: isVisible } = useInView();
   const [isVisibleCheck, setIsVisibleCheck] = useState(false);
-  const [isTriggered, setIsTriggered] = useState(false);
 
   useEffect(() => {
     setIsVisibleCheck(true);
@@ -49,9 +48,7 @@ function AboutUsCardComponent() {
         </div>
       </div>
       {/* <div ref={myRef} className="check-animation image-bottom"></div> */}
-      {isTriggered === false ? null : (
         <div ref={myRef} className="check-animation image-bottom"></div>
-      )}
     </div>
   );
 }
