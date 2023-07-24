@@ -106,3 +106,20 @@
     }
   }
 
+
+  @media (max-width: 766px) {
+    .set-list-width {
+      flex-direction: column !important;
+    }
+
+    .container{
+      width: 100% !important;
+    }
+    .food-container h1 {
+      font-size: 21px;
+    }
+    .food-container {
+      width: 95%;
+      margin: 10px;
+    }
+  }

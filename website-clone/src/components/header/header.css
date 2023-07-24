@@ -116,6 +116,7 @@
   }
   .bottom-nav{
     display: flex;
+    z-index: 2;
 
   }
 }

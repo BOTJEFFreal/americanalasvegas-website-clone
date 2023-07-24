@@ -1,52 +1,37 @@
-import React from "react";
-// styling
+import React, { useEffect, useState } from "react";
 import "./popup.css";
-// images
 
 const PopUp = (props) => {
-  // function that takes boolean as param to conditionally display popup
-  const { setPopUp, image } = props;
+  const [imageIndex, setImageIndex] = useState(props.clickedImageIndex);
+  const totalImages = 13;
+
+  const handleNextImage = () => {
+    setImageIndex((prevIndex) => (prevIndex + 1) % totalImages);
+  };
+
+  const handlePreviousImage = () => {
+    setImageIndex((prevIndex) => (prevIndex - 1 + totalImages) % totalImages);
+  };
 
   return (
-    <div className="popup">
-         <div
-      class="fancybox-wrap fancybox-desktop fancybox-type-image fancybox-opened snipcss-U5ZN3 style-WJY2W"
-      tabindex="-1"
-      id="style-WJY2W"
-    >
-      <div class="fancybox-skin style-1v1kg" id="style-1v1kg">
-        <div class="fancybox-outer">
-          <div class="fancybox-inner style-6Is5y" id="style-6Is5y">
-            <img
-              class="fancybox-image"
-              src="https://static.spotapps.co/spots/ed/5902eb86de4da3bb42e5bcfb539122/full"
-              alt="Old Fashion Smoked cocktail"
-            />
-          </div>
-          <a
-            title="Previous"
-            class="fancybox-nav fancybox-prev"
-            href="javascript:;"
-          >
+    <div className={`modal `}>
+      <div className="modal-outer-container">
+        <span className="close" onClick={() => props.closePopup()}></span>
+        <div className="modal-inner-container">
+          <img
+            className="modal-content"
+            src={`images/imagegrid/full${imageIndex + 1}.jpg`}
+            alt={`Image ${imageIndex + 1}`}
+          />
+          <a className="right-button" onClick={handleNextImage}>
             <span></span>
           </a>
-          <a
-            title="Next"
-            class="fancybox-nav fancybox-next"
-            href="javascript:;"
-          >
+          <a className="left-button" onClick={handlePreviousImage}>
             <span></span>
           </a>
         </div>
-        <a
-          title="Close"
-          class="fancybox-item fancybox-close"
-          href="javascript:;"
-        ></a>
       </div>
     </div>
-    </div>
-   
   );
 };
 

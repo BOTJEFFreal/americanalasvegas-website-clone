@@ -57,7 +57,7 @@ function Dinner(props){
       return (
         <div className="food-list">
           <div className='set-list-width'>
-          <div className='left-container-dinner '>
+          <div className='left-container-dinner'>
             <div className="container">
               <h1>Appetizers</h1>
               <div className="food-items">

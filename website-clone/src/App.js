@@ -17,7 +17,7 @@ import OpenStreetMap from './components/map/openStreetMap';
 function App() {
   return (
     <>
-    <JobsPage/>
+    <MainPage/>
     </>
   );
 }
