@@ -105,3 +105,11 @@ span{
   display: none !important;
   opacity: 0 ;
 }
+
+
+@media (max-width:766px) {
+  .modal-outer-container{
+    width: 95%;
+
+  }
+}

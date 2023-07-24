@@ -14,7 +14,7 @@ const PopUp = (props) => {
   };
 
   return (
-    <div className={`modal `}>
+    <div className="modal">
       <div className="modal-outer-container">
         <span className="close" onClick={() => props.closePopup()}></span>
         <div className="modal-inner-container">
