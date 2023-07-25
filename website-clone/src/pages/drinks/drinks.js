@@ -8,7 +8,7 @@ import "./drinks.css";
 function DrinksPage() {
   const [cardType, setCardType] = useState(0);
   return (
-    <div className="bg">
+    <div className="drink-bg">
       <Header></Header>
       <div className="main-content">
         <div className="drink-menu">

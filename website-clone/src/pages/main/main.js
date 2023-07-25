@@ -17,11 +17,33 @@ import Carousel from "../../components/carousel/carousel";
 // import borderImage2 from './Vector.svg';
 import "@fortawesome/fontawesome-free/css/all.css";
 import video from "./video.mp4";
+import PopupComponent from "./components/popUp/popUp";
 // import Carousel from "../../components/carousel/carousel";
 
 const MainPage = () => {  
+  const [showPopup, setShowPopup] = useState(false);
+  const counterRef = useRef(0);
+
+  const handleOpenPopup = () => {
+    setShowPopup(true);
+  };
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
+
+  useEffect(()=>{
+    if(counterRef.current ===0){
+      counterRef.current += 1;
+      setTimeout(()=>{
+        setShowPopup(true);
+      },5000);
+   
+    }
+  },[])
   return (
     <div className="main-page ">
+      {showPopup && <PopupComponent handleClosePopup={handleClosePopup} />}
       <Header/>
       <div className="main-content ">
         <div className="video-player bg-color">
@@ -55,16 +77,13 @@ const MainPage = () => {
           content="No matter the occasion you can celebrate at our place! Book a private party."
           img={partiesImg}
         />
-        {/* <img className="imggg" src ={borderImage} alt="My Happy SVG"/> */}
         <Carousel/>
         <Reservation />
         <Imagegrid />
         <CarouselText/>
         <MapComponent />
       </div>
-      {/* <video autoplay="autoplay" id="coverVideo" loop="loop" muted="muted" playsinline="playsinline" poster="https://static.spotapps.co/web/americanalasvegas--com/custom/video_poster.jpg" data-vscid="td6vs1676">
-            <source src="https://static.spotapps.co/website_videos/Americana_Website_Intro_EditedVideo_01142022_Vimeo720p30.m4v" type="video/mp4"></source></video>*/}
-
+   
       <Footer></Footer>
     </div>
   );

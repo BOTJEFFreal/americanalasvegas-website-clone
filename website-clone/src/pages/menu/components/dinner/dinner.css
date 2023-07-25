@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+
 .set-list-width{
   display: flex;
 }
@@ -32,7 +35,7 @@
     position: relative;
 
   }
-  .container h1 {
+  .container h2{
     color: #000;
     text-align: center;
     font-family: Parisienne;

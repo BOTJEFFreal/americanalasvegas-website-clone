@@ -32,7 +32,7 @@ function SundayBrunch(props){
           <div className="food-list">
             <div className='set-list-width'>
             <div className="container">
-        <h1>Savory</h1>
+        <h2>Savory</h2>
         <div className="food-items">
           {savoryItems.map((item) => {
             return <MenuItem title = {item.title} price ={item.price} content= {item.description}/>;
@@ -40,7 +40,7 @@ function SundayBrunch(props){
         </div>
       </div>
       <div className={` container restrict-width ${props.rightAnimate === 1 ? "right-animtate":"is-visible"}`}>
-        <h1>Sweets</h1>
+        <h2>Sweets</h2>
         <p>20% Gratuity will be added to parties 6 or more</p>
         <div className="food-items">
           {sweetItems.map((item) => {

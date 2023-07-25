@@ -28,7 +28,7 @@ function Food(){
     return(
         <div className="food-list">
       <div className="food-container">
-        <h1>Appetizers</h1>
+        <h2>Appetizers</h2>
         <div className="food-items">
           {items.map((item) => {
             return <MenuItem title = {item.title} price ={item.price} content= {item.description}/>;
@@ -36,7 +36,7 @@ function Food(){
         </div>
       </div>
       <div className="food-container">
-        <h1>Entrees</h1>
+        <h2>Entrees</h2>
         <p>20% Gratuity will be added to parties 6 or more</p>
         <div className="food-items">
           {entreesItems.map((item) => {

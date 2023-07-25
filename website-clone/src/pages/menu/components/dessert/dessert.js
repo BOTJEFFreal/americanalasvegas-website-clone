@@ -11,7 +11,7 @@ function Dessert(){
     return(
         <div className="food-list">
         <div className="container">
-          <h1>Menu</h1>
+          <h2>Menu</h2>
           <div className="food-items">
             {items.map((item) => {
             return <MenuItem title = {item.title} price ={item.price} content= {item.description}/>;

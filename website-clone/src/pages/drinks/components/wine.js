@@ -11,7 +11,7 @@ function Wine() {
   return (
     <div className="coffee-list list-extra-margin">
       <div className="coffee-container container-extra-margin">
-        <h1>Dessert Wines & Ports</h1>
+        <p>Dessert Wines & Ports</p>
         <div className="coffee-items">
           {items.map((item) => {
             return (

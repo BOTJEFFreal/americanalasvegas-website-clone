@@ -59,7 +59,7 @@ function Dinner(props){
           <div className='set-list-width'>
           <div className='left-container-dinner'>
             <div className="container">
-              <h1>Appetizers</h1>
+              <h2>Appetizers</h2>
               <div className="food-items">
                 {appetizersItems.map((item) => (
                   <MenuItem
@@ -74,7 +74,7 @@ function Dinner(props){
               </div>
             </div>
             <div className="container">
-              <h1>Sides</h1>
+              <h2>Sides</h2>
               <div className="food-items">
                 {sidesItems.map((item) => (
                   <MenuItem 
@@ -87,7 +87,7 @@ function Dinner(props){
               </div>
             </div>
             <div className="container">
-              <h1>Six Course Menu $145</h1>
+              <h2>Six Course Menu $145</h2>
               <p>+$35 With Wine</p>
               <div className="food-items">
                 {fixCourseItems.map((item) => (
@@ -107,7 +107,7 @@ function Dinner(props){
           </div>
     
           <div className={` container restrict-width ${props.rightAnimate === 1 ? "right-animtate":"is-visible"}`}>
-            <h1>Entrees</h1>
+            <h2>Entrees</h2>
             <p>20% Gratuity will be added to parties 6 or more</p>
             <div className="food-items">
               {mainCourseItems.map((item) => (

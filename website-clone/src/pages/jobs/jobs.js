@@ -138,7 +138,7 @@ function JobsPage() {
             </div>
             <div className="bottom-continer">
               <p>Image:</p>
-              <button onClick={handleButtonClick}>Choose a Image</button>
+              <button onClick={handleButtonClick}>Upload Photo</button>
               <input
                 type="file"
                 ref={imgInputRef}

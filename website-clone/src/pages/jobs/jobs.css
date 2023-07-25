@@ -74,10 +74,10 @@
 
 .multiple-checklist p {
   color: #6d6e71;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 24px;
   margin: 0px 0px 16px 16px;
 }
@@ -89,6 +89,12 @@
 .multiple-checklist label {
   color: #212529;
   margin-left: 20px;
+  font-family:"Segoe UI";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  display: inline-block;
+  margin-bottom: 0.5rem;
 }
 
 .multiple-checklist input {
@@ -104,12 +110,8 @@
   min-height: 140px;
   width: 100%;
 }
-.bottom {
-  margin-top: 10px;
-}
 .bottom-continer {
   width: 100%;
-  height: 4%;
   display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
@@ -117,7 +119,6 @@
 }
 
 .bottom-continer p {
-  height: 2%;
   color: #4f5454;
   font-family: Roboto;
   font-size: 17.6px;
@@ -131,7 +132,6 @@
   min-width: 200px;
   border-radius: 10px;
   background: #00a89e;
-  margin-top: 5px;
   color: #000;
   text-align: center;
   font-family: Roboto;
@@ -140,7 +140,7 @@
   font-weight: 400;
   line-height: 24px;
   padding: 10px;
-
+  border: none;
 }
 
 .bottom-continer button:hover {
@@ -163,7 +163,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
-  margin: 16px 0px;
+  /* margin: 8px 0px; */
 }
 
 .message {
@@ -172,16 +172,12 @@
   margin-top: 8px;
   padding: 8px;
   width: max-content;
-
 }
 
-.message:hover{
+.message:hover {
   background-color: #eee;
   border-radius: 5px;
-
 }
-
-
 
 .icon-wrapper {
   display: flex;
@@ -211,8 +207,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-
-  
 }
 
 .close-button {
@@ -226,14 +220,13 @@
   text-align: center;
   width: 16px;
 
-  
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   /* color: white; */
   font-weight: bold;
-  text-decoration: none
+  text-decoration: none;
 }
 .message-invisible {
   opacity: 0 !important;
@@ -242,6 +235,7 @@
 .image-picker {
   padding: 0px 15px;
   width: 52%;
+  display: none;
 }
 
 .image-picker p {

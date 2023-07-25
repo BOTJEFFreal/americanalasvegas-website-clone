@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
 .bg {
-  /* background-image: url(https://static.spotapps.co/web/americanalasvegas--com/custom/food_back.jpg); */
-  height: 100vh;
+  background-image: url('images/background/menubackground.jpg');
+  min-height: 100%;
   width: 100%;
   background-repeat: no-repeat;
-  background-size: 100% ;
+  background-size: cover ;
+
   /* object-fit: cover; */
   
 

@@ -20,7 +20,7 @@ function Coffee(){
     return( 
         <div className="coffee-list">
         <div className="coffee-container"> 
-          <h1>Lavazza Coffee</h1>
+          <p>Lavazza Coffee</p>
           <div className="coffee-items">
             {coffeeitems.map((item) => {
             return <MenuItem title = {item.title} price ={item.price} content= ""/>;
@@ -28,7 +28,7 @@ function Coffee(){
           </div> 
         </div>
         <div className="coffee-container"> 
-          <h1>Mighty Leaf Teas</h1>
+          <p>Mighty Leaf Teas</p>
           <div className="coffee-items">
             {teaItems.map((item) => {
             return <MenuItem title = {item.title} price ={item.price} content= ""/>;

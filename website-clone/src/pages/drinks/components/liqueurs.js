@@ -14,7 +14,7 @@ function Liqueurs(){
     return(
         <div className="coffee-list list-extra-margin">
         <div className="coffee-container container-extra-margin">
-          <h1>Liqueurs</h1>
+          <p>Liqueurs</p>
           <div className="coffee-items">
             {items.map((item) => {
             return <MenuItem title = {item.title} price ={item.price} content= ""/>;
