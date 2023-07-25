@@ -18,7 +18,7 @@
   color: #fff;
   /* text-align: center; */
   font-family: "DM Serif Display", serif;
-  font-size: 67.2px;
+  font-size: 64.2px;
   font-style: normal;
   font-weight: 400;
   line-height: 73.92px;
@@ -27,9 +27,10 @@
   /* height: 54px; */
   /* margin-left: auto;
   margin-right: auto; */
+  margin: 60px 0 0 0;
 }
 
-.subheading1 {
+.events-subheading1 {
   color: #fff;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
@@ -38,16 +39,11 @@
   font-weight: 400;
   line-height: 20.02px;
   text-align: center;
-  position: relative;
   padding: 0%;
-  margin: 0%;
-
-  /* height: 23px; */
-  /* margin-left: auto;
-  margin-right: auto; */
+  margin: 40px 0px 15px;
 }
 
-.subheading2 {
+.events-subheading2 {
     color: #fff;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -56,6 +52,4 @@
     font-weight: 400;
     line-height: 20.02px;
     text-align: center;
-    position: relative;
-    height: 10px;
-}
+  }

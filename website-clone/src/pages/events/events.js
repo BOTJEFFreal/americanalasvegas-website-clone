@@ -1,20 +1,14 @@
 import './events.css'
+import Headers from '../../components/header/header'
 
 function EventsPage(){
     return(
         <>
-        {/* <div className='background-image'>
-            <div className='Content'>
-                <h1>EVENTS</h1>
-                <h2>We are updating our events</h2>
-                <h2>Please stay tuned</h2>
-            </div>
-        </div> */}
          <div className="background-container">
-
+    <Headers/>
       <h1 className="heading">EVENTS</h1>
-      <h1 className="subheading1">We are updating our events</h1>
-      <h1 className="subheading2">Please stay tuned</h1>
+      <h2 className="events-subheading1">We are updating our events</h2>
+      <h2 className="events-subheading2">Please stay tuned</h2>
     </div>
         </>
     )

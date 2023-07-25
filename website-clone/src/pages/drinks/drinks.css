@@ -1,45 +1,40 @@
-.drink-bg::after {
-  content: " ";
-  background-image: url(https://static.spotapps.co/web/americanalasvegas--com/custom/drinks_back.jpg);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -10;
-  filter: grayscale(1) opacity(0.2); /* Corrected the filter property */
-  height: 100%; 
+/* Apply styles to html and body elements to ensure full page coverage */
+#root {
+  margin: 0;
+  height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-
-  
 }
 
+/* Apply background image to the body element */
+.drink-bg{
+  background-image: url('../../../public/images/backgound/drinksbackground.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
 
+/* Other styles for your webpage */
 .main-content {
   justify-content: center;
   align-items: center;
-  display: block;
+  display: flex;
   flex-direction: column;
   gap: 5%;
   width: 100%;
-  z-index: 1;
 }
 
-.drink-menu {
-  width: 100%;
-}
-
-.drink-heading{
+.drink-heading {
   color: #000;
   text-align: center;
-  /* font-size: 42px; */
   font-style: normal;
   font-weight: 600;
   line-height: 73.92px;
   text-transform: uppercase;
   font-size: 56px;
-  
 }
+
 .drink-menu-nav {
   display: flex;
   justify-content: center;
@@ -55,7 +50,6 @@
   padding: 10px 41.92px 11.84px 42px;
   margin: 10px;
   margin-right: 20px;
-
   color: #fff;
   text-align: center;
   font-family: DM Serif Display;
@@ -66,11 +60,12 @@
   text-transform: uppercase;
 }
 
-.red-color-button{
+.red-color-button {
   animation: button-color-change 0.5s 1;
   border: 2px solid #a31521 !important;
   background: #a31521 !important;
 }
+
 @keyframes button-color-change {
   0% {
     border: 2px solid #002e48;
@@ -82,23 +77,24 @@
   }
 }
 
-
+/* Media query for smaller screens */
 @media (max-width: 766px) {
   .drink-menu-nav {
     flex-direction: column;
   }
+
   .drink-menu-nav button {
-    margin: 0px;
+    margin: 0;
     width: 100%;
     padding: 7px 30px;
   }
 
-  .drink-heading{
+  .drink-heading {
     margin-bottom: 10px;
     font-size: 36px !important;
-
   }
-  .red-color-button{
+
+  .red-color-button {
     border: 2px solid #a31521 !important;
     background: #a31521 !important;
   }

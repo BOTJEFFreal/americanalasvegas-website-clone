@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./popup.css";
-
+ 
 const PopUp = (props) => {
   const [imageIndex, setImageIndex] = useState(props.clickedImageIndex);
   const totalImages = 13;
@@ -23,11 +23,11 @@ const PopUp = (props) => {
             src={`images/imagegrid/full${imageIndex + 1}.jpg`}
             alt={`Image ${imageIndex + 1}`}
           />
-          <a className="right-button" onClick={handleNextImage}>
-            <span></span>
+          <a className="modal-right-button" onClick={handleNextImage}>
+            <span className="modal-span"></span>
           </a>
-          <a className="left-button" onClick={handlePreviousImage}>
-            <span></span>
+          <a className="modal-left-button" onClick={handlePreviousImage}>
+            <span className="modal-span"></span>
           </a>
         </div>
       </div>

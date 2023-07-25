@@ -9,7 +9,7 @@ function HeaderTextContainer(props){
             {props.subheading}
           </div> 
           <div class="sub-heading">
-            {props.subheading2}<span className='anchor'>{props.anchor}</span>
+            {props.subheading2} <span className='link-anchor'>{props.anchor}</span>
           </div>
           </div>
           

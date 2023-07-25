@@ -40,7 +40,7 @@ function JobsPage() {
 
   return (
     <>
-      <HeaderSmall></HeaderSmall>
+      <HeaderSmall/>
       <div className="Main-container">
         <HeaderTextContainer
           heading="Careers"
@@ -64,8 +64,8 @@ function JobsPage() {
             </label>
           </div>
 
-          <InputTag />
-          <InputTag />
+          <InputTag placeholder="Email..."/>
+          <InputTag placeholder="Service Industry Experience.. (ex 3 years serving)" />
 
           <div className="multiple-checklist">
             <p>Applying For:</p>
