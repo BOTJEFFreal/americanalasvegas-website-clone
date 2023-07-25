@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import aboutUsImage from "./aboutUs.png";
 import bannerImage from "./bannerImage.png";
+import Decoration from "../../../../components/decoration/decoration";
 
 function AboutUsCardComponent() {
   const { ref: myRef, inView: isVisible } = useInView();
@@ -13,7 +14,7 @@ function AboutUsCardComponent() {
   }, [isVisible]);
   return (
     <div className="parent">
-      <div className="image-overlay-top"></div>
+      <Decoration top={"top"} image={""}/>
 
       <div className="about-us">
         <div className="about-us-left">
@@ -47,8 +48,7 @@ function AboutUsCardComponent() {
           </div>
         </div>
       </div>
-      {/* <div ref={myRef} className="check-animation image-bottom"></div> */}
-        <div ref={myRef} className="check-animation image-bottom"></div>
+      <Decoration ref={myRef} top={"bottom"} image={""}/>
     </div>
   );
 }

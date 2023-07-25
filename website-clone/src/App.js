@@ -13,11 +13,15 @@ import ReservationPage from  './pages/reservation/reservation';
 import CarouselCard from './components/carouselCard/carouselCard';
 import Header from './components/header/header'
 import OpenStreetMap from './components/map/openStreetMap';
+import { BrowserRouter, Routes, Link } from "react-router-dom";
+
 
 function App() {
   return (
     <>
-    <JobsPage/>
+   
+    <MainPage/>
+    
     </>
   );
 }

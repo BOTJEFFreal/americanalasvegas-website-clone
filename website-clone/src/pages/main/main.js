@@ -13,12 +13,9 @@ import MapComponent from "./components/map/map";
 import Reservation from "./components/reservation/reservation";
 import CarouselText from "../../components/carouselText/carouselText";
 import Carousel from "../../components/carousel/carousel";
-// import borderImage from './border.svg';
-// import borderImage2 from './Vector.svg';
 import "@fortawesome/fontawesome-free/css/all.css";
 import video from "./video.mp4";
 import PopupComponent from "./components/popUp/popUp";
-// import Carousel from "../../components/carousel/carousel";
 
 const MainPage = () => {  
   const [showPopup, setShowPopup] = useState(false);

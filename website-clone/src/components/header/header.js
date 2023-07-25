@@ -53,7 +53,7 @@ function Header() {
         ></img>
         <div className={`header-right ${isVisible ? "fade-animation" : ""}`}>
           <div className="header-tags"></div>
-          <a href="#contact">MENU</a>
+          <a href="../../pages/menu/menu">MENU</a>
           <a href="#about">DRINKS</a>
           <a href="#contact">CATERING</a>
           <a href="#about">EVENTS</a>
