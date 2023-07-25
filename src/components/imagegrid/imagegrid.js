@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./imagegrid.css";
 import PopUp from "./popup/popup";
+import Decoration from '../decoration/decoration'
 
 function Imagegrid() {
   const [clickedImageIndex, setClickedImageIndex] = useState(0);
@@ -34,7 +35,7 @@ function Imagegrid() {
   return (
     <>
       <div className={"grid"}>
-        <div className="image-overlay-top"></div>
+        <Decoration/>
         {divTags}
         {popUp && (
           <PopUp
