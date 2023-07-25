@@ -96,7 +96,7 @@
   display: flex;
   align-items: center;
 }
-*/ .indicator-text {
+.indicator-text {
   width: 10px;
   height: 10px;
   border-radius: 50%;
