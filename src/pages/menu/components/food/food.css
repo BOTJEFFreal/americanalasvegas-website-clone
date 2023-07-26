@@ -53,13 +53,17 @@
 
 @media (max-width: 766px) {
   .food-list {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 0px;
   }
   .food-container h1 {
     font-size: 21px;
   }
   .food-container {
-    width: 95%;
     margin: 10px;
   }
+  
+  
 }

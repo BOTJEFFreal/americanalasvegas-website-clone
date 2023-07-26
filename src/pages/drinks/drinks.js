@@ -9,7 +9,7 @@ function DrinksPage() {
   const [cardType, setCardType] = useState(0);
   return (
     <div className="drink-bg">
-      <Header/>
+      <Header checkPage={2}/>
       <div className="main-content">
         <div className="drink-menu">
           <h1 className="drink-heading">OUR DRINKS</h1>

@@ -1,3 +1,4 @@
+import './dessert.css'
 import MenuItem from '../../../../components/menuItem/menuItem';
 
 function Dessert(){
@@ -9,8 +10,8 @@ function Dessert(){
         { id: 5, title: "Chef’s Selection of Sorbets", description: "", price: "$10.00"},
        ];
     return(
-        <div className="food-list">
-        <div className="container">
+        <div className="food-list extend-width">
+        <div className="container extend-container">
           <h2>Menu</h2>
           <div className="food-items">
             {items.map((item) => {

@@ -33,9 +33,10 @@ function JobsPage() {
   };
 
   const handleImageChange = (event) => {
+    setIsImgVisible(true);
     const selectedImage = event.target.files[0];
     setSelectedImage(URL.createObjectURL(selectedImage));
-    setIsImgVisible(true);
+    
   };
 
   return (
@@ -147,9 +148,9 @@ function JobsPage() {
                 onChange={handleImageChange}
               />
             </div>
-            <div className={`image-picker ${isImgVisible ? "" : "message-invisible"}`}>
+            <div className={`image-picker ${isImgVisible ? "" : "img-invisible"}`}>
               <p>Photo Preview:</p>
-              <img src={selectedImage} alt="Selected" />
+              <img className="show-image" src={selectedImage} alt="Selected" />
 
 
             </div>

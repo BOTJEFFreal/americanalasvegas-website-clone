@@ -12,24 +12,28 @@ const Carousel = () => {
       imageUrl: "images/carousel/slide-img1.jpg",
       heading: "AMERICANA'S AUTHENTIC DISHES",
       buttonText: "OUR MENU",
+      link:"./menu"
     },
     {
       id: 2,
       imageUrl: "images/carousel/slide-img2.jpg",
       heading: "SERVED TO PERFECTION",
       buttonText: "CATERING",
+      link:"./catering"
     },
     {
       id: 3,
       imageUrl: "images/carousel/slide-img3.jpg",
       heading: "AUTHENTIC TASTE IN EVERY DISH",
       buttonText: "OUR MENU",
+      link:"./menu"
     },
     {
       id: 4,
       imageUrl: "images/carousel/slide-img4.jpg",
       heading: "HOST YOUR NEXT PARTY WITH US",
       buttonText: "PARTIES",
+      link:"./"
     },
   ];
 
@@ -65,11 +69,12 @@ const Carousel = () => {
           key={slide.id}
           className={`slide ${index === currentIndex ? "active" : ""}`}
         >
-          {/* <img src={slide.imageUrl} alt={`Slide ${slide.id}`} /> */}
           <ImageContainer
             imageUrl={slides[index].imageUrl}
             heading={slides[index].heading}
             buttonText={slides[index].buttonText}
+            link={slides[index].link}
+            
           />
         </div>
       ))}

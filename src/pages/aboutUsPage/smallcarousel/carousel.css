@@ -1,0 +1,91 @@
+.carousel {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+}
+
+.small-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.small-slide.active {
+  opacity: 1;
+}
+
+.small-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.small-controllers{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-indicators {
+  margin-top: 15px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.indicator {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  stroke-width: 1px;
+  stroke: #fff;
+  border: 2px solid #fff;
+  margin: 15px 0px 0px 15px;
+}
+
+.indicator.active {
+  background-color: #fff;
+}
+
+.small-controls {
+  position: absolute;
+  top: 90%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  width: 30px;
+  height: 30px;
+}
+
+
+.small-controls :hover{
+    opacity: 1;
+  }
+
+
+.control-btn {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 5px;
+  width: 40px;
+  height: 40px;
+}
+
+.play-pause-button{
+  color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+}

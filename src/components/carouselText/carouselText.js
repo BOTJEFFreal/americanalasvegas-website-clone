@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 import CarouselCard from "../carouselCard/carouselCard";
 import "./carouselText.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStop } from '@fortawesome/free-solid-svg-icons';
+import { faPlay } from '@fortawesome/free-solid-svg-icons';
+
 
 const CarouselText = () => {
   const cards = [
@@ -98,12 +102,12 @@ const CarouselText = () => {
           ))}
         </div>
         <div className="controls-text">
-          <button className="control-btn-text" onClick={handlePlayClick}>
-            Play
+          <button className="control-btn-text" onClick={handlePauseClick}>
+          <FontAwesomeIcon icon={faStop} />
           </button>
 
-          <button className="control-btn-text" onClick={handlePauseClick}>
-            Pause
+          <button className="control-btn-text" onClick={handlePlayClick}>
+          <FontAwesomeIcon icon={faPlay} />
           </button>
         </div>
       </div>

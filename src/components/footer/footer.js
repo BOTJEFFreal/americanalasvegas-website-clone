@@ -1,9 +1,13 @@
-import './footer.css'
+import "./footer.css";
 
-function Footer(){
-    return(
-        <> 
-        <div className="footer">
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faYelp } from "@fortawesome/free-brands-svg-icons";
+
+function Footer() {
+  return (
+    <>
+      <div className="footer">
         <div className="location">
           <div class="hours-title">
             <h1>Location</h1>
@@ -28,21 +32,11 @@ function Footer(){
                 <h1>Find us on...</h1>
               </div>
               <div class="social-links social-icons-holder social-square">
-                <a
-                  class="contact-icon"
-                  href="https://www.instagram.com/americanalv"
-                  target="_blank"
-                >
-                  <i class="social-icon fa fa-instagram"></i>
-                  <span>Instagram page</span>
-                </a> 
-                <a
-                  class="contact-icon yelp-icon"
-                  href="https://www.yelp.com/biz/americana-las-vegas-2"
-                  target="_blank"
-                >
-                  <i aria-hidden="true" class="social-icon fa fa-yelp"></i>
-                  <span>Yelp page</span>
+                <a className="footer-a" href="https://www.instagram.com/americanalv/">
+                  <FontAwesomeIcon icon={faInstagram} />
+                </a>
+                <a className="footer-a" href="https://www.yelp.com/biz/americana-las-vegas-2">
+                  <FontAwesomeIcon icon={faYelp} />
                 </a>
               </div>
             </div>
@@ -53,9 +47,7 @@ function Footer(){
                 <h1>Contact us</h1>
               </div>
               <p>
-                <a className="phone-link"
-                  href="tel:+17023315565"
-                >
+                <a className="phone-link" href="tel:+17023315565">
                   (702)-331-5565
                 </a>
               </p>
@@ -65,14 +57,17 @@ function Footer(){
       </div>
       <div className="footer-bottom">
         <p className="footer-boottom-header">Powered by: </p>
-        <p className="footer-boottom-content">Website design, Social Media marketing and Email marketing provided by SpotHopper.</p>
+        <p className="footer-boottom-content">
+          Website design, Social Media marketing and Email marketing provided by
+          SpotHopper.
+        </p>
       </div>
-      <div className='footer-end'>
+      <div className="footer-end">
         <p>We strive to make our website accessible to everybody. </p>
-        <a href='#'>Learn More.</a>
+        <a href="#">Learn More.</a>
       </div>
-        </>
-    )
+    </>
+  );
 }
 
 export default Footer;

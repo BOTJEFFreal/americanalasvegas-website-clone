@@ -6,7 +6,7 @@
 .dropdown-container {
   position: relative;
    /* Adjust the width as needed */
-  border: none; /* Remove the border */
+  border: 1 black; /* Remove the border */
   border-radius: 6px;
   width: 100%;
 

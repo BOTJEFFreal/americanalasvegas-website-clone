@@ -10,19 +10,28 @@ import Imagegrid from './components/imagegrid/imagegrid';
 import DrinksPage from './pages/drinks/drinks'
 import CateringPage from './pages/catering/catering';
 import ReservationPage from  './pages/reservation/reservation';
+import AboutUsPage from './pages/aboutUsPage/aboutUsPage';
 import CarouselCard from './components/carouselCard/carouselCard';
 import Header from './components/header/header'
 import OpenStreetMap from './components/map/openStreetMap';
-import { BrowserRouter, Routes, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Switch } from 'react-router-dom';
+
 
 
 function App() {
   return (
-    <>
+    <Routes>
    
-    <MainPage/>
-    
-    </>
+        <Route index element ={<MainPage/>} />
+        <Route path="/menu" element={<MenuPage />} />
+        <Route path="/drinks" element={<DrinksPage />} />
+        <Route path="/catering" element={<CateringPage />} />
+        <Route path="/events" element={<EventsPage />} />
+        <Route path="/reserve" element={<ReservationPage />} />
+        <Route path="/jobs" element={<JobsPage />} />
+        <Route path="/aboutus" element={<AboutUsPage />} />
+  
+  </Routes>
   );
 }
 

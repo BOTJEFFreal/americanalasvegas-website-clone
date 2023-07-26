@@ -5,7 +5,6 @@
 
 .bg-color{
   background-color: #a31521;
-
 }
 
 .video-player {
@@ -31,6 +30,7 @@ video {
 }
 
 .red-banner {
+  display: flex;
   padding: 30px 0px;
   justify-content: center;
   align-items: center;
@@ -58,7 +58,18 @@ video {
   padding: 0px;
   margin: 0px;
 }
-
+.red-banner-text{
+  text-align: center;
+  box-sizing: border-box;
+  font-weight: 500;
+  color: inherit;
+  margin: 0 auto;
+  line-height: 1.5em;
+  text-transform: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3em;
+  margin: 0px;
+}
 .reservation-section {
   display: block;
   width: 100%;
@@ -120,4 +131,16 @@ video {
   z-index: 1;
 }
 
+.location-pin{
+  color: #fff;
+}
 
+@media (max-width:766px) {
+  .red-banner{
+    display: block;
+  }
+  .red-banner-text{
+    font-size: 15px;
+  }
+  
+}

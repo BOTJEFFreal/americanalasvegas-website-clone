@@ -3,14 +3,13 @@
   display: block;
   color: #000;
   display: inline-flex;
-padding: 13.5px 10px 13.5px 10px;
-align-items: flex-start;
-width: 100%;
-border-radius: 10px;
-border: 2px solid #F3F3F4;
-background: #FFF;
-
-} 
+  padding: 13.5px 10px 13.5px 10px;
+  align-items: flex-start;
+  width: -webkit-fill-available;
+  border-radius: 10px;
+  border: 2px solid #f3f3f4;
+  background: #fff;
+}
 
 input:focus {
   border: 2px solid #000;
@@ -20,7 +19,7 @@ input:focus {
   outline: none;
 }
 
-.empty-input{
+.empty-input {
   border: 2px solid #c04a39;
   border-radius: 4px;
   box-shadow: 0 0 2px #c04a39;
@@ -37,6 +36,10 @@ input:focus {
   font-weight: 700;
   line-height: normal;
   opacity: 1;
+}
+
+.extra-border {
+  border: 1.5px solid #1a1a1a !important;
 }
 
 

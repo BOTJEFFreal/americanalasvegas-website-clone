@@ -31,14 +31,12 @@
   max-width: 150px;
 }
 
-a {
-  background-color: transparent;
-  color: #000;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
 
 .go-back-link {
+  background-color: transparent;
+  color: #000;
+  text-decoration: none;
+
   padding: 10px 0;
   vertical-align: middle;
   text-align: center;

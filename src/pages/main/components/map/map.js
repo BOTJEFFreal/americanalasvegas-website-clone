@@ -29,7 +29,6 @@ function MapComponent(){
       </div>
         <div className="map-right">
         <OpenStreetMap/>
-
         </div>
         <div className="image-overlay-bottom"></div>
 

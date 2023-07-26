@@ -66,11 +66,11 @@
     z-index: 11;
 }
 
-.modal-right-button{
+.right-button{
     right: 0;
 }
 
-.modal-left-button{
+.left-button{
     left: 0;
 }
 
@@ -88,13 +88,13 @@
 
 }
 
-.rmodal-ight-button:hover span{
+.right-button:hover span{
     background-image: url('https://static.spotapps.co/web/americanalasvegas--com/lib/fancybox/source/fancybox_sprite@2x.png');
     right: 0;
 
 }
 
-.modal-left-button:hover span{
+.left-button:hover span{
     background-image: url('https://static.spotapps.co/web/americanalasvegas--com/lib/fancybox/source/fancybox_sprite@2x.png');
     transform: rotate(180deg);
     left: 0;

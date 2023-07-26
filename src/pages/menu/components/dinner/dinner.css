@@ -29,9 +29,6 @@
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     margin: 10px 20px;
     padding: 20px 30px 30px;
-    /* width: 50%; */
-  
-    /* background-color: aqua;  */
     position: relative;
 
   }
@@ -56,6 +53,7 @@
     margin: -5px 0px 0px 0px;
   }
   .overlay {
+    display: block;
     content: "";
     position: absolute;
     z-index: 1;
@@ -111,18 +109,22 @@
 
 
   @media (max-width: 766px) {
+    .overlay{
+      display: none !important;
+    }
     .set-list-width {
       flex-direction: column !important;
-    }
-
-    .container{
-      width: 100% !important;
     }
     .food-container h1 {
       font-size: 21px;
     }
     .food-container {
-      width: 95%;
       margin: 10px;
+    }
+    .restrict-width{
+      width: 85% !important;
+    }
+    .container{
+      margin: 0px;
     }
   }

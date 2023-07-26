@@ -1,0 +1,90 @@
+.about-us-contianer{
+    display: flex;
+    height: 520px !important;
+}
+
+.about-us-left{
+    display: flex;
+    flex: 4;
+    background-color:#DDEDFA ;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+   }
+.about-us-middle-left{
+    flex: 4;   
+    object-fit: cover;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40%;
+    background-position: center center;
+    transition: all 0.8s ease-in-out;
+    min-height: 320px;
+    background-color: #fff;
+    opacity: 1;
+    background-image: url('https://static.spotapps.co/web/americanalasvegas--com/custom/about_us_page_left.jpg');
+
+}
+
+.about-us-logo{
+    width: 300px !important;
+    height: 100px !important;
+}
+
+.about-us-right{
+    flex: 6;
+    padding: 0;
+}
+.about-us-middle-right{
+    flex: 6;
+    margin-top: 30px;
+    align-items: center;
+}
+.about-us-right-content{
+    padding: 30px 30px 30px 60px;
+}
+
+.about-us-heading{ 
+    text-align: center;
+    margin: 20px 0px 10px;
+    line-height: 1.1;
+    font-family: 'DM Serif Display', serif;
+    text-transform: uppercase;
+    font-size: 58px;
+    font-weight: 600;
+    color: #000;
+}
+
+
+.about-us-content{
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 0 15px 0;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 1;
+    
+}
+
+.about-us-a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+}
+
+.about-us-bottom-contianer {
+   height: 500px;
+    object-fit: contain;
+  }
+  
+  .map-container {
+    /* Set the map to the bottom of its container */
+    
+    /* Set the desired width and height of the map container */
+    width: 100%; /* Adjust this value as needed */
+    height: 500px; /* Adjust this value as needed */
+  }

@@ -75,8 +75,10 @@
 .catering-us-button button {
   border: 1px solid #a31521;
   background: #a31521;
-  padding: 9px 40px;
+  padding: 9px 40px;  
+}
 
+.card-button-text{
   color: #fff;
   text-align: center;
   font-family: DM Serif Display;
@@ -85,11 +87,15 @@
   font-weight: 400;
   line-height: 22.857px;
   text-transform: uppercase;
-  
 }
 
 .catering-us-button button:hover {
   background: #002e48;
+}
+
+.card-button-text:hover{
+  color: #fff;
+  text-decoration: none;
 }
 
 .banner {
@@ -204,12 +210,12 @@
 
   }
   .catering-us-left{
-    width: 100%;
+    width: fit-content;
     padding: 20px 20px 20px 20px;
 
   }
   .catering-us-right {
-    width: 100%;
+    width: fit-content;
 
   }
   .catering-us-heading p {

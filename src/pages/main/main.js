@@ -1,5 +1,4 @@
 import "./main.css";
-import { useInView } from "react-intersection-observer";
 import { useState, useRef, useEffect } from "react";
 import Header from "../../components/header/header";
 import CardsComponents from "./components/cards/cards";
@@ -44,19 +43,19 @@ const MainPage = () => {
       <Header/>
       <div className="main-content ">
         <div className="video-player bg-color">
-          <video autoplay loop muted>
+          <video autoPlay loop muted>
             <source src={video}></source>
             Your browser does not support the video tag.
           </video>
         </div>
 
         <div className="red-banner">
-          <h1>
+          
             <a href="#" className="location-pin">
               <i className="fa fa-map-marker"></i> 
             </a>
-            2620 Regatta Drive, Las Vegas, NV 89128
-          </h1>
+            <p className="red-banner-text">2620 Regatta Drive, Las Vegas, NV 89128</p>
+          
         </div>
         <AboutUsCardComponent />
         <CardsComponents
@@ -66,6 +65,7 @@ const MainPage = () => {
           content=" We Cater your Needs. Elegant style of catering for your style
                 and budget. Any kind of event from weddings to birthdays."
           img={cateringImg}
+          link={"./catering"}
         />
         <CardsComponents
           toggle={false}
@@ -73,6 +73,7 @@ const MainPage = () => {
           subheading="Book your next party with us!"
           content="No matter the occasion you can celebrate at our place! Book a private party."
           img={partiesImg}
+          link={"./"}
         />
         <Carousel/>
         <Reservation />

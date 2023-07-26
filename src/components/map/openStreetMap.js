@@ -1,6 +1,8 @@
+// OpenStreetMap.js
+
 import React, { useEffect } from 'react';
 import L from 'leaflet';
-import './openStreetMap.css'
+import './openStreetMap.css';
 
 const OpenStreetMap = () => {
   useEffect(() => {
@@ -26,14 +28,13 @@ const OpenStreetMap = () => {
       // Add a marker to the map with the custom blue icon
       L.marker([36.129074, -115.165291], { icon: blueIcon }).addTo(map)
         .openPopup();
-
     }
 
     // Call the initMap function after the component has mounted
     initMap();
   }, []);
 
-  return <div id="map" style={{ height: '500px' }}></div>;
+  return <div id="map" style={{ height: '400px', }}></div>;
 };
 
 export default OpenStreetMap;

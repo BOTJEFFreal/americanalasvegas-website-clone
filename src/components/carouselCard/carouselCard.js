@@ -5,14 +5,14 @@ import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 const StarComponent = ({ rating }) => {
     const stars = Array.from({ length: rating });
   
-    return (
+    return ( 
       <div className="stars-row">
         {stars.map((_, index) => (
           <div className="stars" key={index}>&#9733;</div>
         ))}
       </div>
     );
-  };
+  }; 
 
 function CarouselCard(props) {
   return (

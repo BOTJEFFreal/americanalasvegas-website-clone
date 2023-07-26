@@ -2,6 +2,7 @@ import { useState,useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import "./cards.css";
 import bannerImage from "./bannerImage.png";
+import { Link } from "react-router-dom";
 
 function CardsComponents(props) {
   const { ref: myRef, inView: isVisible } = useInView();
@@ -23,7 +24,7 @@ function CardsComponents(props) {
                 <div className={`catering-us-subheading ${isVisibleCheck ? (props.toggle===true ? "bottom-up-animation2" : "right-animation2"):""}`}>{props.subheading}</div>
                 <div className={`catering-us-content ${isVisibleCheck ? (props.toggle===true ? "bottom-up-animation2" : "right-animation2"):""}`}>{props.content}</div>
                 <div className={`catering-us-button ${isVisibleCheck ? (props.toggle===true ? "bottom-up-animation3" : "right-animation3"):""}`}>  
-                  <button>{props.heading}</button>
+                  <button><Link className="card-button-text" to={props.link}>{props.heading}</Link></button>
                 </div>
               </div>
             </div>

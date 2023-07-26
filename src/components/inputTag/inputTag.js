@@ -16,7 +16,8 @@ function InputTag(props) {
   };
   return (
     <input
-      className={`text-input ${inputValue === '' ? 'empty-input' : ''}`}
+      className={`text-input ${inputValue === '' ? 'empty-input' : ''} ${props.extraBorder ? 'extra-border' : ''}`}
+
       type="text"
       placeholder={props.type === "moneyType" ? "$45" : props.placeholder}
       onClick={handleChange}

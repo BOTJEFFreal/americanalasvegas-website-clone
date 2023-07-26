@@ -11,7 +11,7 @@ function MenuPage() {
   const [rightAnimate2, setrightAnimate2] = useState(0);
   return (
     <div>
-      <Header></Header>
+      <Header checkPage={1}/>
       <div className="main-content bg">
         <div className="food-menu">
           <h1>OUR MENU</h1>

@@ -79,8 +79,12 @@
 
 /* Media query for smaller screens */
 @media (max-width: 766px) {
+  .drink-menu{
+    width: 100%;
+  }
   .drink-menu-nav {
     flex-direction: column;
+    width: 100%;
   }
 
   .drink-menu-nav button {

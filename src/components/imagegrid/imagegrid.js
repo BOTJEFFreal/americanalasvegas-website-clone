@@ -35,7 +35,6 @@ function Imagegrid() {
   return (
     <>
       <div className={"grid"}>
-        <Decoration/>
         {divTags}
         {popUp && (
           <PopUp
@@ -44,7 +43,6 @@ function Imagegrid() {
             clickedImageIndex={clickedImageIndex}
           />
         )}
-        <div className="image-overlay-bottom"></div>
       </div>
     </>
   );

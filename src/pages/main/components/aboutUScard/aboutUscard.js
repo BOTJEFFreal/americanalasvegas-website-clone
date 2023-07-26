@@ -3,8 +3,7 @@ import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import aboutUsImage from "./aboutUs.png";
 import bannerImage from "./bannerImage.png";
-import Decoration from "../../../../components/decoration/decoration";
-
+import { Link } from "react-router-dom";
 function AboutUsCardComponent() {
   const { ref: myRef, inView: isVisible } = useInView();
   const [isVisibleCheck, setIsVisibleCheck] = useState(false);
@@ -14,8 +13,6 @@ function AboutUsCardComponent() {
   }, [isVisible]);
   return (
     <div className="parent">
-      <Decoration top={"top"} image={""}/>
-
       <div className="about-us">
         <div className="about-us-left">
           <img
@@ -31,7 +28,7 @@ function AboutUsCardComponent() {
 
               <img className="banner" src={bannerImage} alt="Banner"></img>
               <div
-                className={`about-us-content ${
+                className={`about-us-card-content ${
                   isVisibleCheck ? "animate3" : ""
                 }`}
               >
@@ -41,14 +38,15 @@ function AboutUsCardComponent() {
               </div>
               <div className="about-us-button">
                 <button className={`${isVisibleCheck ? "animate3" : ""}`}>
-                  Read More
+                          <Link  className="about-us-button-text" to="/aboutus">Read More  </Link>
+
                 </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <Decoration ref={myRef} top={"bottom"} image={""}/>
+      <div ref={myRef} className="check-animation"></div>
     </div>
   );
 }

@@ -7,15 +7,15 @@ import HeaderTextContainer from "../../components/headerTextContainer/headerText
 function CateringPage() {
   return (
     <>
-      <HeaderSmall></HeaderSmall>
+      <HeaderSmall/>
 
       <div className="main-container">
         <HeaderTextContainer
         heading ="Catering"
         subheading="Please fill out the form below and we'll do our best to accommodate your desired date and any requests you may have to make your party/celebration memorable."/>
-        <div className="form">
-          <InputTag placeholder="Name..."></InputTag>
-          <InputTag placeholder="Phone..."></InputTag>
+         <div className="form">
+          <InputTag placeholder="Name..." extraBorder={true}></InputTag>
+          <InputTag placeholder="Phone..." extraBorder={true}></InputTag>
           <div className="checkbox-row">
             <input type="checkbox" className="checkbox-polices"></input>
             <label>
@@ -26,19 +26,19 @@ function CateringPage() {
               </a>
             </label>
           </div>
-          <InputTag placeholder="Email..."></InputTag>
+          <InputTag placeholder="Email..." extraBorder={true}></InputTag>
           <div className="time-container">
-            <Dropdown></Dropdown>
-            <DatePickerComponent></DatePickerComponent>
-            <Dropdown></Dropdown>
+            <Dropdown typeOfDropDown={"people"} />
+            <DatePickerComponent/>
+            <Dropdown typeOfDropDown={"time"} />
           </div>
 
-          <Dropdown></Dropdown>
-          <Dropdown></Dropdown>
+          <Dropdown typeOfDropDown={"occasion"} />
+          <Dropdown typeOfDropDown={"catering"} />
           <div className="budget">
             <label>Budget per person:</label>
             <div className="budget-input-continer">
-              <InputTag type="moneyType"></InputTag>
+              <InputTag type="moneyType" extraBorder={true}></InputTag>
             </div>
           </div>
           <textarea

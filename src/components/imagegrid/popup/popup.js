@@ -13,6 +13,8 @@ const PopUp = (props) => {
     setImageIndex((prevIndex) => (prevIndex - 1 + totalImages) % totalImages);
   };
 
+  
+
   return (
     <div className="modal">
       <div className="modal-outer-container">
@@ -23,10 +25,10 @@ const PopUp = (props) => {
             src={`images/imagegrid/full${imageIndex + 1}.jpg`}
             alt={`Image ${imageIndex + 1}`}
           />
-          <a className="modal-right-button" onClick={handleNextImage}>
+          <a className="right-button" onClick={handleNextImage}>
             <span className="modal-span"></span>
           </a>
-          <a className="modal-left-button" onClick={handlePreviousImage}>
+          <a className="left-button" onClick={handlePreviousImage}>
             <span className="modal-span"></span>
           </a>
         </div>

@@ -17,11 +17,10 @@
 
 
 .form {
-  margin-top: 20px;
-  width: 620px;
+  margin: 20px auto;
+  /* width: 620px; */
   padding: 0px 15px;
-  justify-content: center;
-  align-self: center;
+
 }
 
 .checkbox-row {
@@ -97,8 +96,8 @@
   border: 2px solid #f3f3f4;
   background: #fff;
   min-height: 140px;
-  width: 100%;
-  margin: 5px 5px 5px 0px;
+  width: -webkit-fill-available;
+  margin: 5px 0px 5px 0px;
   padding: 10px;
 }
 

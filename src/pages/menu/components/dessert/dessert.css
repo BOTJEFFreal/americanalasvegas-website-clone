@@ -1,0 +1,9 @@
+@media (max-width:766px) {
+    .extend-width{
+        padding: 40px 0px ;
+        width: 100%
+    }
+    .extend-container{
+        width: 80%;
+    }
+}
